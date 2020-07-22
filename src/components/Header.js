@@ -12,21 +12,33 @@ const Header = () => {
                 <h1 className="header--logo-title">Jara Amaro<br/>
                                                     psicóloga</h1>
             </div>
-            <div className="header--menu">
-               <i class="fas fa-bars container"></i>
-                <nav>
-                    <ul>
-                        <li>Consultas</li>
-                        <li>Testimonios</li>
-                        <li>Contacto</li>
-                        <li>Sobre mí</li>
-                       
+            <nav>
+                <div className="header--menu">
+                    <input type="checkbox" />
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    
+                        <ul className="header--menu-list">
+                            <li>Consultas</li>
+                            <li>Testimonios</li>
+                            <li>Contacto</li>
+                            <li>Sobre mí</li>
+                        
 
 
-                    </ul>
-                </nav>
+                        </ul>
+                    
 
-            </div>
+                </div>
+            </nav>
+
+
+
+
+            
         </header>
     );
 };
