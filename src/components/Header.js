@@ -1,7 +1,13 @@
 import React from 'react';
 import logo from '../images/logo192.png'
+import { useState } from 'react';
 
 const Header = () => {
+
+    
+    const [isMenuOpen, setIsMenuOpen] = useState("header__hamburger-close");
+    
+
 
     return (
         <header className="header">
@@ -13,24 +19,21 @@ const Header = () => {
                                                     psicóloga</h1>
             </div>
             <nav>
-                <div className="header__hamburger-open">
+                <div className={isMenuOpen}
+             
+                 onClick={() => setIsMenuOpen("header__hamburger-open")}>
 
                     <span></span>
                     <span></span>
                     <span></span>
 
-                    
                         <ul className="header__menu-list">
                             <li>Consultas</li>
                             <li>Testimonios</li>
                             <li>Contacto</li>
                             <li>Sobre mí</li>
-                        
-
-
-                        </ul>
-                    
-
+                            <li>Blog</li>
+                        </ul>                    
                 </div>
             </nav>
 
