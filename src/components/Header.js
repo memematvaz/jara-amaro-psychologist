@@ -7,7 +7,14 @@ const Header = () => {
     
     const [isMenuOpen, setIsMenuOpen] = useState("header__hamburger-close");
     
-
+    const toggleMenu = () => {
+        if (isMenuOpen === "header__hamburger-close"){
+            setIsMenuOpen("header__hamburger-open")
+        } else {
+            setIsMenuOpen("header__hamburger-close")
+        }
+    }
+    
 
     return (
         <header className="header">
@@ -19,9 +26,9 @@ const Header = () => {
                                                     psicóloga</h1>
             </div>
             <nav>
-                <div className={isMenuOpen}
+                <div className={ isMenuOpen }
              
-                 onClick={() => setIsMenuOpen("header__hamburger-open")}>
+                 onClick={ toggleMenu }>
 
                     <span></span>
                     <span></span>
@@ -44,5 +51,5 @@ const Header = () => {
         </header>
     );
 };
-
+//() => setIsMenuOpen("header__hamburger-open")
 export default Header;

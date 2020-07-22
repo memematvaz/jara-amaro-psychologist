@@ -2,7 +2,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     box-shadow:rgba(0, 0, 0, 0.2) 0px 25px 50px 0px;
@@ -32,6 +32,7 @@
 
     .header__hamburger-close{
         @include mobile-text;
+        padding: 10px;
         
         span
         {
@@ -53,15 +54,16 @@
                       opacity 0.55s ease;
         }
 
-        ul {
+        .header__menu-list  {
           display: none;
         }
     }
 
     .header__hamburger-open{
       @include mobile-text;
+      padding: 10px;
       
- span
+      span
         {
           display: block;
           width: 33px;
@@ -76,7 +78,7 @@
           
           transform-origin: 4px 0px;
           
-          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+          transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
                       background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                       opacity 0.55s ease;
         }
@@ -101,10 +103,24 @@
       
 
 
-      ul {
+      .header__menu-list {
         display: block;
+        transition: 0.3s; 
         background-color: $inverted-text-color; 
         opacity: 0.9;
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 150px;
+        padding: 50px;
+        padding-top: 125px;
+        transform: translate(-100%, 0);
+  
+        li {
+          padding: 10px 0;
+          font-size: 22px;
+        }
+
+
       }
 
 
@@ -118,13 +134,49 @@
 @media (min-width: 768px) {
 
     .header {
-        width: 100vw;
-    }
-}    
+      position: fixed;
+  
+      li {
+        @include tablet-text; 
+        color: $cold-dark-color;
+        font-weight: bold;
+        padding: 10px;
 
-@media (min-width: 1200px) {
-    .header{
-      width: 100vw;
+      }
+
+      li:hover {
+        color: $hot-dark-color;
+        transition: color 0.3s ease;
+       
+    }
+  
+      .header__hamburger-close span, .header__hamburger-open span{
+
+            display: none;
+          
+      }
+      .header__hamburger-close , .header__hamburger-open {
+
+            .header__menu-list {
+              display: flex;
+              flex-direction: row;
+              margin: 0;
+              
+              li {
+                
+              }
+      
+            }
+
+      }
+  
+      
+  
+  
+  
+  
+  
+        
     }
   }
 
@@ -133,47 +185,23 @@
 
 
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-.header__menu input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: $cold-dark-color;
-}
+
+@media (min-width: 1200px) {
+    .header{
+      width: 100vw;
+      padding-left: 100px;
+      padding-right: 100px;
 
 
-.header__menu-list
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 150px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
+      li {
+        color: $cold-dark-color;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 20px;
 
-.header__menu-list li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
+      }
+    }
+  }
 
-/*
- * And let's slide it in from the left
- */
-.header__menu input:checked ~ ul
-{
-  transform: none;
-}
+
+
