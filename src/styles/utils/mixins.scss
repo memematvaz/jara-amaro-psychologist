@@ -1,43 +1,43 @@
 @mixin mobile-title {
-    font-family:  'Poppins', sans-serif;
-    font-size: 20px;
+    font-family:  $title-font;
+    font-size: 23px;
+    font-weight: 500;
 
 }
 
 @mixin tablet-title {
-    font-family:  'Poppins', sans-serif;
-    font-size: 25px;
-
+    font-family:  $title-font;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 @mixin pc-title {
-    font-family:  'Poppins', sans-serif;
-    font-size: 30px;
-
+    font-family:  $title-font;
+    font-size: 36px;
+    font-weight: 500;
 }
 
 @mixin mobile-text {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #292F36;
+    font-family: $text-font;
+    font-size: 18px;
+    color: $text-color;
 }
 
 @mixin tablet-text {
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    color: #292F36;
+    font-family: $text-font;
+    font-size: 22px;
+    color: $text-color;
 }
 
 @mixin pc-text {
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    color: #292F36;
+    font-family: $text-font;
+    font-size: 24px;
+    color: $text-color;
 }
 
 
 
 @mixin mobile-logo{
-
     font-family: $title-font;
     font-size: 20px;
     display: flex;
@@ -47,3 +47,41 @@
 }
 
 
+@mixin mobile-button {
+    background-color: $hot-dark-color;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+    border-color: $hot-dark-color;
+    color: $inverted-text-color;
+    font-family: $text-font;
+    font-weight:900;
+    font-size: 18px;
+
+}
+
+@mixin tablet-button {
+    background-color: $hot-dark-color;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+    border-color: $hot-dark-color;
+    color: $inverted-text-color;
+    font-family: $text-font;
+    font-weight:900;
+    font-size: 22px;
+    max-width: 180px;
+}
+
+@mixin pc-button {
+    background-color: $hot-dark-color;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+    border-color: $hot-dark-color;
+    color: $inverted-text-color;
+    font-family: $text-font;
+    font-weight:900;
+    font-size: 24px;
+    max-width: 200px;
+}

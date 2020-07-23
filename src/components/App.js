@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/main.scss';
 
 import Header from './Header';
+import Hero from './Hero';
 import Footer from './Footer';
 
 
@@ -25,7 +26,7 @@ class App extends React.Component {
             <div className = "App" >
                 <Header/>
 
-
+                <Hero/>
 
                 <Footer/>
             </div>

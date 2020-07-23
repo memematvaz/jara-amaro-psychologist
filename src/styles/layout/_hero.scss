@@ -1,0 +1,189 @@
+.hero__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+        .hero__background-image{
+        width: 100vw;
+        height: 100vh;        background-image: url("../../images/herohome.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        .hero__text-container-pc {
+            display: none;
+        }
+        }
+       
+    
+
+    .hero__text-container-mobile {
+        
+        h2 {
+            @include mobile-title;
+            color: $hot-dark-color;
+            .bold-title{
+                font-weight: 900;
+                        }
+    
+        }
+
+        
+        p { 
+            @include mobile-text;
+        }
+
+        .button{
+            @include mobile-button;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .hero__container {
+        width: 100%;
+        height: 100vh;
+    
+            .hero__background-image{
+            width: 100vw;
+            height: 100vh;        background-image: url("../../images/herohome.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 70px;
+    
+            .hero__text-container-pc {
+                display: block;
+                width: 400px;
+                height: 400px;
+                background-color: white;
+                opacity: 0.9;
+                padding: 30px;
+                margin:0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                
+
+                h2 {
+                    @include tablet-title;
+                    color: $hot-dark-color;
+                    margin: 0px;
+                    .bold-title{
+                        font-weight: 900;
+                                }
+            
+                }
+        
+                
+                p { 
+                    @include tablet-text;
+                    
+                }
+        
+                .button{
+                    @include tablet-button;
+                    margin-top: 25px;
+                }
+            }
+            }
+            }
+           
+        
+    
+        .hero__text-container-mobile {
+            display: none;
+           
+  }
+}
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+    .hero__container {
+        width: 100%;
+        height: 100vh;
+    
+            .hero__background-image{
+            width: 100vw;
+            height: 100vh;        background-image: url("../../images/herohome.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 70px;
+    
+            .hero__text-container-pc {
+                display: block;
+                width: 500px;
+                height: 420px;
+                background-color: white;
+                opacity: 0.9;
+                padding: 30px;
+                margin:0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                
+
+                h2 {
+                    @include pc-title;
+                    color: $hot-dark-color;
+                    margin: 0px;
+                    .bold-title{
+                        font-weight: 900;
+                                }
+            
+                }
+        
+                
+                p { 
+                    @include pc-text;
+                    
+                }
+        
+                .button{
+                    @include pc-button;
+                    margin-top: 25px;
+                }
+            }
+            }
+            }
+           
+        
+    
+        .hero__text-container-mobile {
+            display: none;
+           
+  }
+}
+
+
+@media (min-width: 1400px) {
+
+    .hero__container {
+
+            .hero__background-image{
+
+            padding: 140px;
+    
+            
+            }
+        }
+}
