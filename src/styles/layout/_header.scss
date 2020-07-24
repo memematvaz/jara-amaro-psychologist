@@ -5,8 +5,10 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 1;
     box-shadow:rgba(0, 0, 0, 0.2) 0px 25px 50px 0px;
     background-color: white;
+    margin: 0px;
 
     .header__logo-container{
         height: 60px;

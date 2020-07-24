@@ -3,6 +3,7 @@ import '../styles/main.scss';
 
 import Header from './Header';
 import Hero from './Hero';
+import Main from './Main';
 import Footer from './Footer';
 
 
@@ -27,6 +28,8 @@ class App extends React.Component {
                 <Header/>
 
                 <Hero/>
+
+                <Main/>
 
                 <Footer/>
             </div>
