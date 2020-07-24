@@ -7,7 +7,7 @@ class Main extends React.Component {
       
         return ( 
             <div className="main__container">
-                <h2>Pasa el tiempo y <span className="bold-title">empiezas a pensar que tú eres el problema:</span> crees que nunca podrás escapar de ese callejón sin salida en el que te encuentas.</h2>
+                <h3>Pasa el tiempo y <span className="bold-title">empiezas a pensar que tú eres el problema:</span> crees que nunca podrás escapar de ese callejón sin salida en el que te encuentas.</h3>
                 <div className="main__lists-container">
                     <ul className="main__first-list">
                         <li>Has probado todo tipo de terapias, pero sigues sin ver los resultados</li>
@@ -18,7 +18,7 @@ class Main extends React.Component {
                     </ul>
                     
                     <div className="main__second-list-container">
-                        <h2>Piensas que deberías mejorar, pero <span className="bold-title">cada vez te sientes peor.</span></h2>
+                        <h3>Piensas que deberías mejorar, pero <span className="bold-title">cada vez te sientes peor.</span></h3>
                         <ul className="main__second-list">
                             <li>Te culpas porque crees que estás haciendo algo mal.</li>
                             <li>No entiendes por qué ves resultados y tu angustia crece día a día.</li>

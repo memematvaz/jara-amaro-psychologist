@@ -1,6 +1,6 @@
 .main__container {
     width: 100%;
-    h2 {
+    h3 {
         @include mobile-title;
         background-color: $hot-light-color;
         padding: 10px;
@@ -28,7 +28,7 @@
             background-color: white;
      
 
-            h2 {
+            h3 {
                 color: $cold-dark-color;
                 padding: 0 px;
                 margin: 0px;
@@ -50,7 +50,7 @@
 @media (min-width: 768px) {
     .main__container {
 
-        h2 {
+        h3 {
             @include tablet-title;
             background-color: $hot-light-color;
             padding: 20px;
@@ -79,7 +79,7 @@
             .main__second-list-container{
                 background-color: white;         
     
-                h2 {
+                h3 {
                     color: $cold-dark-color;
                     padding: 0 px;
                     margin: 0px;
@@ -101,7 +101,7 @@
     .main__container {
         background-color: $hot-light-color;  
         padding: 50px;      
-        h2 {
+        h3 {
             @include tablet-title;
             background-color: $hot-light-color;
             padding: 20px;
@@ -146,7 +146,7 @@
                
                 
     
-                h2 {
+                h3 {
                     color: $cold-dark-color;
                     background-color: white;
                     margin: 0px;
