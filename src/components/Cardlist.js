@@ -8,6 +8,10 @@ const CardList = (props) => {
 
       
         return ( 
+            <>
+            <h3 className="card-list__introduction">¿No te parece que necesitas sentirte mejor y recuperar tu vida?<br/>
+            <span className="bold-title">Tu problema tiene solución y está más cerca de lo que piensas.></span></h3>
+
             <ul className="card-list__container">
 
             {
@@ -19,17 +23,17 @@ const CardList = (props) => {
                      title={cardObject.title}
                      text={cardObject.text.main}
                      price={cardObject.price}
-                     how={cardObject.text.details.how}
-                     time={cardObject.text.details.time}
-                     include={cardObject.text.details.include}
-                     perfect={cardObject.text.details.perfect}
-                     need={cardObject.text.details.need}
+                     how={cardObject.details.how}
+                     time={cardObject.details.time}
+                     include={cardObject.details.include}
+                     perfect={cardObject.details.perfect}
+                     need={cardObject.details.need}
                      slogan={cardObject.slogan}
              />
              </li>
             )}
          </ul>
-                
+              </>  
         );
     
 }
