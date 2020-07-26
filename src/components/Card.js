@@ -9,15 +9,16 @@ const Card = (props) => {
                         <i className={ props.icon }>
                         </i>
                     </div>
-                    <h4>{ props.title }</h4>
+                    <h4 className="container">Consultas <br/>
+                    { props.title }</h4>
                 </div>
-                <div className="card__text-container">
+                <div className="card__text-container container">
                     <p className="card__text">{ props.text } </p>
                     <p className="card__text">{ props.price } </p>
-                    <a>Leer más</a>
+                    <a className="read-more">Leer más</a>
             </div>
             </div>
-            <div className="card-details__container">
+            <div className="card-details__container-close">
                 <span className="icon fas fa-times"></span>
                 <div className="card__circle">
                     <i className={ props.icon }></i>

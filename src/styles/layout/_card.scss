@@ -1,0 +1,129 @@
+.card__container{
+    background-color: white;
+    border-radius: 38px 20px 20px 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);   
+    margin: 20px;
+    width: 220px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 70px;
+
+        .card__circle{
+            background-color: $hot-dark-color;
+            border-radius: 100px;
+            height: 70px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                color: $inverted-text-color;
+                font-size: 30px;
+
+            }
+        }
+
+        h4 {
+            @include mobile-text;
+            font-weight: 900;
+            margin: 0px;
+            text-align: end;
+            margin-right: 15px;
+            margin-top: 10px;
+
+        }
+    }
+    .card__text-container{
+        display: flex;
+        flex-direction: column;
+
+       .card__text{
+        @include mobile-text;
+        text-align: end;
+        margin-right: 15px;
+        margin-top: 10px;
+       } 
+       .read-more{
+        @include mobile-text;
+        font-weight: 900;
+        color: $hot-dark-color;
+        text-align: end;
+        margin-right: 15px;
+        margin-bottom: 10px;
+
+       }
+    }
+}
+
+@media (min-width: 768px) {
+    .card__container{
+        background-color: white;
+        border-radius: 38px 20px 20px 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);   
+        margin: 20px;
+        width: 250px;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        .card__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 70px;
+    
+            .card__circle{
+                background-color: $hot-dark-color;
+                border-radius: 100px;
+                height: 80px;
+                width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    color: $inverted-text-color;
+                    font-size: 40px;
+    
+                }
+            }
+    
+            h4 {
+                @include tablet-text;
+                font-weight: 900;
+                margin: 0px;
+                text-align: end;
+                margin-right: 15px;
+                margin-top: 10px;
+    
+            }
+        }
+        .card__text-container{
+            display: flex;
+            flex-direction: column;
+    
+           .card__text{
+            @include tablet-text;
+            text-align: end;
+            margin-right: 15px;
+            margin-top: 10px;
+           } 
+           .read-more{
+            @include tablet-text;
+            font-weight: 900;
+            color: $hot-dark-color;
+            text-align: end;
+            margin-right: 15px;
+            margin-bottom: 10px;
+    
+           }
+        }
+    } 
+}

@@ -13,12 +13,12 @@ const CardList = (props) => {
                 <span className="bold-title">Tu problema tiene solución y está más cerca de lo que piensas.</span>
             </h3>
 
-
-
-            <ul className="card-list__container">
-                <h2 className="card-list__title container">Estoy aquí para ayudarte. <br/>
+            <h2 className="card-list__title container">Estoy aquí para ayudarte. <br/>
                     <span className="bold-title">Tú decides como.</span>
                 </h2>
+
+            <ul className="card-list__container container">
+
             {
             therapies.map((cardObject) =>
             <li className="card-object"
@@ -26,7 +26,7 @@ const CardList = (props) => {
             <Card
                      icon={cardObject.icon}
                      title={cardObject.title}
-                     text={cardObject.text.main}
+                     text={cardObject.text}
                      price={cardObject.price}
                      how={cardObject.details.how}
                      time={cardObject.details.time}

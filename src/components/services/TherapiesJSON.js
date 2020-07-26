@@ -2,7 +2,7 @@ const THERAPIES =[
     {
         id:1,
         icon:'far fa-building',
-        title: 'Consultas presenciales',
+        title: ' presenciales',
         price:'1 hora 50 €',
         text: 'Es ideal para quienes no tienen privacidad en su casa y buscan un espacio de empatía y escucha.',
         details: {
@@ -18,9 +18,9 @@ const THERAPIES =[
     {
         id:2,
         icon:'fas fa-desktop',
-        title: 'Consultas online',
+        title: ' online',
         price:'1 hora 40 €',
-        text: 'Perfecto para ti si no deseas o te es imposible desplazarte',
+        text: 'Perfecto para ti si no deseas o te es imposible desplazarte.',
         details: {
             how: 'La sesión se realizaría mediante videoconferencia mediante Skype.',                 
             time: 'Su duración sería de 1 hora y su precio 40 €',
@@ -33,7 +33,7 @@ const THERAPIES =[
     {
         id:3,
         icon:'fas fa-mobile-alt',
-        title: 'Consultas telefónicas',
+        title: ' telefónicas',
         price:'1 hora 30 €',
         text: 'Ideal si no necesitas una terapia tan profunda o si quieres resolver una duda puntual.',
         details: {
@@ -49,7 +49,7 @@ const THERAPIES =[
     {
         id:4,
         icon:'far fa-envelope',
-        title: 'Consultas por email',
+        title: ' por email',
         price:'1 hora 20 €',
         text:  'Tu tipo de consulta si necesitas hablar con alguien que no te juzgue.',
         details: {
@@ -64,9 +64,9 @@ const THERAPIES =[
     {
         id:5,
         icon:'fab fa-whatsapp',
-        title: 'Consultas WhatsApp',
+        title: ' WhatsApp',
         price:'1 hora 20 €',
-        text: 'Perfecto si no necesitas una consulta tan profunda y te es imposible desplazarte',
+        text: 'Perfecto si no necesitas una consulta tan profunda y te es imposible desplazarte.',
         details: {
             how: 'La sesión se realizaría a través de WhatsApp.',                 
             time: 'Su duración sería de 1 hora y su precio de 20 €',
