@@ -18,22 +18,21 @@ const Card = (props) => {
                     <a className="read-more">Leer más</a>
             </div>
             </div>
-            <div className="card-details__container-close">
-                <span className="icon fas fa-times"></span>
+            <div className="card-details__container-open">
+                <i className="icon fas fa-times"></i>
                 <div className="card__circle">
                     <i className={ props.icon }></i>
                 </div>
-                <h4>{ props.title }</h4>
-                <p>{ props.how }</p>
-                <p>{ props.time }</p>
+                <h4>Consultas{ props.title }</h4>
+                <p>{ props.how } { props.time }</p>
                 <p>{ props.include }</p>
                 <p>{ props.perfect }</p>
                 <p>{ props.need }</p>
                 <h5>{ props.slogan }</h5>
-                <p>Solicita tu cita primera cita llamando al teléfono 680 36 26 44<br/>
+                <p>Solicita tu cita primera cita llamando al teléfono<span className="telephone"> 680 36 26 44</span><br/>
                     o escríbeme rellenando el siguiente formulario:
                 </p>
-                <button>¡Escríbeme!</button>
+                <button className="button">¡Escríbeme!</button>
             </div>
         </>
   )

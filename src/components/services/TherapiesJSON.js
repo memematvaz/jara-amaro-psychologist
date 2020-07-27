@@ -59,7 +59,7 @@ const THERAPIES =[
             perfect: 'Es ideal para quienes no quieren o necesitan una terapia tan profunda. Si quieres resolver una duda puntual o estás en un momento de crisis.',
             need: 'Necesitas un ordenador, tablet o teléfono para escribir.'
             },
-        slogan: 'Nos separa solo un correo electrónimco ¿Me escribes?',
+        slogan: 'Nos separa solo un correo electrónico ¿Me escribes?',
     },
     {
         id:5,
@@ -70,7 +70,7 @@ const THERAPIES =[
         details: {
             how: 'La sesión se realizaría a través de WhatsApp.',                 
             time: 'Su duración sería de 1 hora y su precio de 20 €',
-            include: 'Incluye terapia virtual, recomendaciones de ejercicios prácticos y guías en formato PDF que podrás consultar siempre que quieras..',
+            include: 'Incluye terapia virtual, recomendaciones de ejercicios prácticos y guías en formato PDF que podrás consultar siempre que quieras.',
             perfect: 'Es ideal para quienes no quieren o necesitan una terapia tan profunda. Si quieres resolver una duda puntual o estás en un momento de crisis.',
             need: 'Necesitas un teléfono, WhatsApp e internet.'
         },

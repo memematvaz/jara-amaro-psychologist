@@ -136,8 +136,7 @@
 @media (min-width: 768px) {
 
     .header {
-      position: fixed;
-  
+  height: 100px;
       li {
         @include tablet-text; 
         color: $cold-dark-color;

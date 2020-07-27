@@ -3,5 +3,171 @@
 }
 
 .card-details__container-open{
-    display: none;
+    width: 80vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  .fa-times{
+      text-align: end;
+      font-size: 20px;
+      color: $text-color;
+
+  }
+  .card__circle{
+    background-color: $hot-dark-color;
+    border-radius: 100px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    
+    
+        i{
+            color: $inverted-text-color;
+            font-size: 30px;
+
+        }
+    }
+    h4{            
+        @include mobile-title;
+        color: $hot-dark-color;
+        text-align: center;
+
+    }
+    p{
+        @include mobile-text;
+        .telephone{
+            font-weight: 900;
+        }
+    }
+    h5 {
+        @include mobile-title;
+        color: $hot-dark-color;
+    }
+    .button{
+        @include mobile-button;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        max-width: 110px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .card-details__container-open{
+        width: 80vw;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+      .fa-times{
+          text-align: end;
+          font-size: 30px;
+    
+      }
+      .card__circle{
+        background-color: $hot-dark-color;
+        border-radius: 100px;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        
+        
+            i{
+                color: $inverted-text-color;
+                font-size: 40px;
+    
+            }
+        }
+        h4{            
+            @include tablet-title;
+            color: $hot-dark-color;
+            text-align: center;
+    
+        }
+        p{
+            @include tablet-text;
+            .telephone{
+                font-weight: 900;
+            }
+        }
+        h5 {
+            @include tablet-title;
+            color: $hot-dark-color;
+            padding: 0px;
+        }
+        .button{
+            @include tablet-button;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            max-width: 140px;
+        }
+    }   
+}
+
+@media (min-width: 1200px) {
+    .card-details__container-open{
+        width: 80vw;
+        padding: 100px;
+        padding-top: 40px;
+      .fa-times{
+          text-align: end;
+          font-size: 40px;
+    
+      }
+      .card__circle{
+        background-color: $hot-dark-color;
+        border-radius: 100px;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        
+        
+            i{
+                color: $inverted-text-color;
+                font-size: 40px;
+    
+            }
+        }
+        h4{            
+            @include pc-title;
+            color: $hot-dark-color;
+            text-align: center;
+            padding: 30px;
+    
+        }
+        p{
+            @include pc-text;
+            .telephone{
+                font-weight: 900;
+            }
+        }
+        h5 {
+            @include pc-title;
+            color: $hot-dark-color;
+            padding: 30px;
+            padding-left: 0px;
+
+        }
+        .button{
+            @include pc-button;
+            margin-top: 20px;
+            max-width: 140px;  
+        }
+    }   
 }
