@@ -2,8 +2,7 @@
 import React from 'react';
 import THERAPIES from './services/TherapiesJSON';
 import Card from './Card'
-import Carddetails from './Carddetails'
-import { Link } from 'react-router-dom';
+
 import { useState } from 'react';
 
 const CardList = (props) => {
@@ -27,7 +26,7 @@ const CardList = (props) => {
             therapies.map((cardObject) =>
             <li className="card-object"
                 key={cardObject.id}>
-                     <Link to={`/therapies/${cardObject.id}`}>
+                
                         <Card
                                 icon={cardObject.icon}
                                 title={cardObject.title}
@@ -40,7 +39,7 @@ const CardList = (props) => {
                                 need={cardObject.details.need}
                                 slogan={cardObject.slogan}
                         />
-                    </Link>
+           
              </li>
             )}
          </ul>
