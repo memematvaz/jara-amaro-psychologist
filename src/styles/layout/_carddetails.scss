@@ -3,6 +3,8 @@
 }
 
 .card-details__container-open{
+    position: fixed;
+    z-index: 1;
     width: 80vw;
     background-color: white;
     border-radius: 20px;
