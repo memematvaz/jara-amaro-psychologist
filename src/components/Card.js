@@ -19,16 +19,16 @@ const Card = (props) => {
             <div id={ props.key } className={ isCardOpen }>
                 <div className="card__header">
 
-                
+                <div className="card-details__close-icon"  onClick={ toggleCard }>
+                        <i className="icon fas fa-times"></i> 
+                    </div>
                     <div className="card__circle">
                         <i className={ props.icon }>
                         </i>
                     </div>
                     <h4 className="container">Consultas <br/>
                     { props.title }</h4>
-                    <div className="card-details__close-icon"  onClick={ toggleCard }>
-                        <i className="icon fas fa-times"></i> 
-                    </div>
+                   
                 </div>
                 <div className="card__text-container container">
                     <p className="card__text">{ props.text } </p>
@@ -43,6 +43,12 @@ const Card = (props) => {
                         <p>{ props.need }</p>
                         <h5 className="card-details__mobile-no">{ props.slogan }</h5>
                         <div className="read-less"  onClick={ toggleCard }>Leer menos</div>
+                        <div >
+                        <p className="card-details__mobile-no">Solicita tu cita primera cita llamando al teléfono<span className="telephone"> 680 36 26 44</span><br/>
+                        o escríbeme rellenando el siguiente formulario:
+                    </p>
+                    <button className="card-details__mobile-no button">¡Escríbeme!</button>
+                    </div>
                 </div>
             
             </div>

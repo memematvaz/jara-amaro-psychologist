@@ -51,5 +51,5 @@ const Header = () => {
         </header>
     );
 };
-//() => setIsMenuOpen("header__hamburger-open")
+
 export default Header;
