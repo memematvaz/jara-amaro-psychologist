@@ -12,10 +12,8 @@ const CardList = (props) => {
 
         return ( 
             <>
-            <h3 className="card-list__introduction container">¿No te parece que necesitas sentirte mejor y recuperar tu vida?<br/>
-                <span className="bold-title">Tu problema tiene solución y está más cerca de lo que piensas.</span>
-            </h3>
 
+                      
             <h2 className="card-list__title container">Estoy aquí para ayudarte. <br/>
                     <span className="bold-title">Tú decides como.</span>
                 </h2>
@@ -43,7 +41,7 @@ const CardList = (props) => {
              </li>
             )}
          </ul>
-
+        
 
 
 

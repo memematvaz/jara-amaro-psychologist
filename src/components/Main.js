@@ -6,6 +6,7 @@ class Main extends React.Component {
     render() {
       
         return ( 
+            <>
             <div className="main__container">
                 <h3>Pasa el tiempo y <span className="bold-title">empiezas a pensar que tú eres el problema:</span> crees que nunca podrás escapar de ese callejón sin salida en el que te encuentas.</h3>
                 <div className="main__lists-container">
@@ -27,7 +28,10 @@ class Main extends React.Component {
                     </div>
                 </div>
             </div>  
-                
+            <h3 className="card-list__introduction container">¿No te parece que necesitas sentirte mejor y recuperar tu vida?<br/>
+            <span className="bold-title">Tu problema tiene solución y está más cerca de lo que piensas.</span>
+            </h3>
+            </>
         );
     }
 }

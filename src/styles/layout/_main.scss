@@ -16,8 +16,6 @@
             list-style: disc;            
             list-style-type: disc; 
             list-style-position: inside; 
-            
-
         }
         .main__first-list {
             background-color: $hot-light-color;
@@ -26,6 +24,7 @@
         }
         .main__second-list-container{
             background-color: white;
+            
      
 
             h3 {
@@ -77,11 +76,13 @@
                
             }
             .main__second-list-container{
-                background-color: white;         
-    
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+                background-color: white;     
+
+                    
                 h3 {
                     color: $cold-dark-color;
-                    padding: 0 px;
+                    padding: 0px;
                     margin: 0px;
                     background-color: white;
                 }
@@ -94,7 +95,7 @@
             }
         }
     
-    
+        
     }
 }
 

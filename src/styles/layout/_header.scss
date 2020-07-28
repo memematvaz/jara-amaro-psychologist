@@ -34,7 +34,7 @@
 
     .header__hamburger-close{
         @include mobile-text;
-        padding: 25px;
+        padding: 22px;
         
         span
         {
@@ -63,7 +63,7 @@
 
     .header__hamburger-open{
       @include mobile-text;
-      padding: 10px;
+      padding: 22px;
       
       span
         {
@@ -116,7 +116,7 @@
         padding: 50px;
         padding-top: 125px;
         transform: translate(-100%, 0);
-  
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16); 
         li {
           padding: 10px 0;
           font-size: 22px;
@@ -162,6 +162,7 @@
               display: flex;
               flex-direction: row;
               margin: 0;
+              box-shadow: 0;
               
               li {
                 

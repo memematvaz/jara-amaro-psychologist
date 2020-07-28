@@ -6,7 +6,8 @@
 
 .card-list__title{
     @include mobile-title;
-    color: $cold-dark-color; 
+    color: $cold-dark-color;
+    mix-blend-mode: multiply; 
 }
 
 .card-list__container{
@@ -35,14 +36,15 @@
         text-align: center;
     }
     .card-list__container{
-        background-image: url("../../images/fondo-tipos.png");
-        background-size: cover;
-        background-repeat: no-repeat;
+     
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    
 }
 
 
@@ -67,8 +69,18 @@
         color: $cold-dark-color; 
         text-align: center;
     }
-
     .card-list__container{
+        background-image:none;
+    }
+
+    .card-list__pc-background-container{
+        background-image: url("../../images/fondo-tipos.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /*.card-list__container{
         background-image: url("../../images/fondo-tipos.png");
         background-size: cover;
         background-repeat: repeat;
@@ -76,5 +88,6 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-    }
+        background-position: center;
+    }*/
 }
