@@ -15,6 +15,10 @@
         align-items: flex-start;
         height: 70px;
 
+        .card-details__close-icon{
+            display: none;
+        }
+
         .card__circle{
             background-color: $hot-dark-color;
             border-radius: 100px;
@@ -57,8 +61,13 @@
         text-align: end;
         margin-right: 15px;
         margin-bottom: 10px;
-
        }
+       .read-less{
+           display: none;
+       }
+    }
+    .card-details__text-container{
+        display: none;
     }
 }
 

@@ -3,10 +3,13 @@ import React from 'react';
 import THERAPIES from './services/TherapiesJSON';
 import Card from './Card'
 
+import { useState } from 'react';
+
 const CardList = (props) => {
     const therapies = THERAPIES;
 
-      
+
+
         return ( 
             <>
             <h3 className="card-list__introduction container">¿No te parece que necesitas sentirte mejor y recuperar tu vida?<br/>
@@ -23,21 +26,27 @@ const CardList = (props) => {
             therapies.map((cardObject) =>
             <li className="card-object"
                 key={cardObject.id}>
-            <Card
-                     icon={cardObject.icon}
-                     title={cardObject.title}
-                     text={cardObject.text}
-                     price={cardObject.price}
-                     how={cardObject.details.how}
-                     time={cardObject.details.time}
-                     include={cardObject.details.include}
-                     perfect={cardObject.details.perfect}
-                     need={cardObject.details.need}
-                     slogan={cardObject.slogan}
-             />
+                
+                        <Card
+                                icon={cardObject.icon}
+                                title={cardObject.title}
+                                text={cardObject.text}
+                                price={cardObject.price}
+                                how={cardObject.details.how}
+                                time={cardObject.details.time}
+                                include={cardObject.details.include}
+                                perfect={cardObject.details.perfect}
+                                need={cardObject.details.need}
+                                slogan={cardObject.slogan}
+                        />
+           
              </li>
             )}
          </ul>
+
+
+
+
               </>  
         );
     

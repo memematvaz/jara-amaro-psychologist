@@ -6,40 +6,55 @@ import Hero from './Hero';
 import Main from './Main';
 import Cardlist from './Cardlist';
 import Footer from './Footer';
+import Aboutme from './Aboutme';
+import Contact from './Contact';
 
 
-class App extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-
-
-        }
-    }
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+  } from "react-router-dom";
 
 
+  const App = () => {
 
-    
-    render() {
-      
-        return (
 
+    return ( 
             <div className = "App" >
-                <Header/>
+                <Router>
+                    <Switch>
+                        <Route exact path="/">
+                            <Header/>
 
-                <Hero/>
+                            <Hero/>
 
-                <Main/>
+                            <Main/>
 
-                <Cardlist/>
+                            <Cardlist/>
 
-                <Footer/>
+                            <Footer/>
+                        </Route>
+
+                        <Route exact path="/about-me">
+                                    <Aboutme/>
+                        </Route>    
+
+                        <Route exact path="/contact">
+                                    <Contact/>
+                        </Route> 
+
+
+
+
+
+                    </Switch>
+                </Router>
             </div>
-        );
-    }
+    )};
+  
 
-}
+
 
 
 export default App;
