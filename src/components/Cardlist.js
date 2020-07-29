@@ -3,7 +3,6 @@ import React from 'react';
 import THERAPIES from './services/TherapiesJSON';
 import Card from './Card'
 
-import { useState } from 'react';
 
 const CardList = (props) => {
     const therapies = THERAPIES;

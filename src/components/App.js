@@ -11,12 +11,7 @@ import Aboutme from './Aboutme';
 import Contact from './Contact';
 import Testimonies from './Testimonies';
 
-
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-  } from "react-router-dom";
+import { Route, Switch } from 'react-router-dom';
 
 
   const App = () => {
@@ -24,7 +19,7 @@ import {
 
     return ( 
             <div className = "App" >
-                <Router>
+
                     <Switch>
                         <Route exact path="/">
                             <Header/>
@@ -62,7 +57,7 @@ import {
 
 
                     </Switch>
-                </Router>
+  
             </div>
     )};
   
