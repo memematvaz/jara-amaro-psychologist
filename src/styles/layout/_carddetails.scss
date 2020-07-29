@@ -154,6 +154,9 @@
         text-align: center;
         padding: 20px 0 0 0;  
         color: $hot-dark-color;
+        .card__breakline{
+            display: none;
+        }
     }
     }
 

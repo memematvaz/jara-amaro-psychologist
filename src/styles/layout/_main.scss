@@ -76,13 +76,13 @@
                
             }
             .main__second-list-container{
-                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+               
                 background-color: white;     
 
                     
                 h3 {
                     color: $cold-dark-color;
-                    padding: 0px;
+                    padding: 20px;
                     margin: 0px;
                     background-color: white;
                 }
@@ -145,6 +145,7 @@
                 max-width: 540px;
                 max-height: 375px;
                 min-height: 300px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
                
                 
     

@@ -11,7 +11,7 @@
 }
 
 .card-list__container{
-    background-image: url("../../images/fondo-tipos.png");
+    background-image: url("../../images/fondo-tipos2.svg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -71,17 +71,18 @@
     }
     .card-list__container{
         background-image:none;
+        padding: 30px 0
     }
 
     .card-list__pc-background-container{
-        background-image: url("../../images/fondo-tipos.png");
+        background-image: url("../../images/fondo-tipos2.svg");
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: initial;
     }
 
     /*.card-list__container{
-        background-image: url("../../images/fondo-tipos.png");
+        background-image: url("../../images/fondo-tipos2.svg");
         background-size: cover;
         background-repeat: repeat;
         display: flex;

@@ -26,7 +26,7 @@ const Card = (props) => {
                         <i className={ props.icon }>
                         </i>
                     </div>
-                    <h4 className="container">Consultas <br/>
+                    <h4 className="container">Consultas <span className="card__breakline"><br/></span>
                     { props.title }</h4>
                    
                 </div>
@@ -44,8 +44,7 @@ const Card = (props) => {
                         <h5 className="card-details__mobile-no">{ props.slogan }</h5>
                         <div className="read-less"  onClick={ toggleCard }>Leer menos</div>
                         <div >
-                        <p className="card-details__mobile-no">Solicita tu cita primera cita llamando al teléfono<span className="telephone"> 680 36 26 44</span><br/>
-                        o escríbeme rellenando el siguiente formulario:
+                        <p className="card-details__mobile-no">Solicita tu cita primera cita llamando al teléfono<span className="telephone"> 680 36 26 44</span> o escríbeme rellenando el siguiente formulario:
                     </p>
                     <button className="card-details__mobile-no button">¡Escríbeme!</button>
                     </div>
