@@ -1,18 +1,50 @@
 .footer {
-  width: 100vw;
+  padding-top: 5px;
+  
+  background-color: $cold-dark-color;
+  margin: 0px;
+
+  .footer__logo-container{
+      height: 60px;
+      @include mobile-logo;
+
+
+      .footer__logo-image-container{
+          height: 50px;
+          img {
+              height: 50px;
+          }
+      }
+      .footer__logo-title{
+        color: $inverted-text-color;          
+        font-size: 20px;
+          
+      }
+  }
 
 }
 
 
 @media (min-width: 768px) {
-  .footer{
-    width: 100vw;
+
+  .footer {
+    padding-top: 15px;
+
   }
+
+
 }
+
+
+
 
 
 @media (min-width: 1200px) {
   .footer{
-    width: 100vw;
-  }
+
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+}
 }
