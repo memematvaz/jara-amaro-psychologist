@@ -1,5 +1,6 @@
 import React from 'react';
 import heroHome from '../images/herohome.jpg'
+import { Link } from 'react-router-dom';
 
 class Hero extends React.Component {
 
@@ -15,7 +16,9 @@ class Hero extends React.Component {
                         <h2 className="hero__title">¿Temes una terapia <span className="bold-title">interminable?</span></h2>
                         <p>Sentirse mejor en menos de siete sesiones es posible.</p>
                         <p>Transforma tu vida en menos tiempo y libérate del malestar.</p>
-                        <button className="button">¡Escríbeme!</button>
+                        <Link className="link" to="/contact">
+                            <button className="button">¡Escríbeme!</button>
+                        </Link>
                     </div>
                 </div>
                 
@@ -23,7 +26,9 @@ class Hero extends React.Component {
                     <h2>¿Temes una terapia <span className="bold-title">interminable?</span></h2>
                     <p>Sentirse mejor en menos de siete sesiones es posible.</p>
                     <p>Transforma tu vida en menos tiempo y libérate del malestar</p>
-                    <button className="button">¡Escríbeme!</button>
+                    <Link className="link" to="/contact">
+                        <button className="button">¡Escríbeme!</button>
+                    </Link>
                 </div>
             </div>
                 

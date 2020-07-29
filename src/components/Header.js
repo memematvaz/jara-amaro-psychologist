@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../images/logo192.png'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -18,27 +19,33 @@ const Header = () => {
 
     return (
         <header className="header">
-            <div className="header__logo-container">
-                <div className="header__logo-image-container container">
-                    <img src={ logo } alt="logo Jara Amaro psicóloga"></img>
+             <Link className="link" to="/">
+                <div className="header__logo-container">
+                    <div className="header__logo-image-container container">
+                        <img src={ logo } alt="logo Jara Amaro psicóloga"></img>
+                    </div>
+                    <h1 className="header__logo-title">Jara Amaro<br/>
+                                                        psicóloga</h1>
                 </div>
-                <h1 className="header__logo-title">Jara Amaro<br/>
-                                                    psicóloga</h1>
-            </div>
+            </Link>
             <nav>
-                <div className={ isMenuOpen }
-             
-                 onClick={ toggleMenu }>
-
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
+                <div className={ isMenuOpen }>
+                    <div className="header__hamburger-container" onClick={ toggleMenu }>
+                        <span className="header__first-bar"></span>
+                        <span className="header__second-bar"></span>
+                        <span className="header__third-bar"></span>
+                    </div>
                         <ul className="header__menu-list">
                             <li>Consultas</li>
-                            <li>Testimonios</li>
-                            <li>Contacto</li>
-                            <li>Sobre mí</li>
+                            <Link className="link" to="/testimonies">
+                                <li>Testimonios</li>
+                            </Link>
+                            <Link className="link" to="/contact">
+                                <li>Contacto</li>
+                            </Link>
+                            <Link className="link" to="/aboutme">
+                                <li>Sobre mí</li>
+                            </Link>
                             <li>Blog</li>
                         </ul>                    
                 </div>

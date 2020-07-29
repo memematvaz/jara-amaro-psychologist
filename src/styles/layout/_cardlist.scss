@@ -58,7 +58,7 @@
                     margin: 0px;
                     padding-top: 50px;
                     padding-right: 180px;
-                    padding-left: 80px;
+                    padding-left: 100px;
                     padding-bottom: 50px;
                 }
     
@@ -68,6 +68,7 @@
          @include pc-title;
         color: $cold-dark-color; 
         text-align: center;
+        mix-blend-mode: multiply;
     }
     .card-list__container{
         background-image:none;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Card = (props) => {
 
@@ -46,7 +47,9 @@ const Card = (props) => {
                         <div >
                         <p className="card-details__mobile-no">Solicita tu cita primera cita llamando al teléfono<span className="telephone"> 680 36 26 44</span> o escríbeme rellenando el siguiente formulario:
                     </p>
-                    <button className="card-details__mobile-no button">¡Escríbeme!</button>
+                    <Link className="link" to="/contact">
+                        <button className="card-details__mobile-no button">¡Escríbeme!</button>
+                    </Link>
                     </div>
                 </div>
             

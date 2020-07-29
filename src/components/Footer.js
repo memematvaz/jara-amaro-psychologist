@@ -1,16 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-class Footer extends React.Component {
 
+const Footer = () => {
 
-    render() {
-      
-        return ( 
-            <footer>
+    return (
+        <footer>
                 
-            </footer>
-        );
-    }
-}
+        </footer>
+    );
+
+
+};
 
 export default Footer;

@@ -102,21 +102,22 @@
 @media (min-width: 1200px) {
     .main__container {
         background-color: $hot-light-color;  
-        padding: 50px;      
+        padding: 50px; 
+        padding-left: 0px;     
         h3 {
             @include tablet-title;
             background-color: $hot-light-color;
             padding: 20px;
             margin: 0px;
             padding-right: 180px;
-            padding-left: 80px;
+            padding-left: 100px;
             padding-bottom: 50px;
         }
     
         .main__lists-container{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             padding-right: 100px;
             padding-bottom: 20px;
 

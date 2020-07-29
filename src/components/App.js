@@ -9,6 +9,7 @@ import Aboutmehome from './Aboutmehome';
 import Footer from './Footer';
 import Aboutme from './Aboutme';
 import Contact from './Contact';
+import Testimonies from './Testimonies';
 
 
 import {
@@ -37,17 +38,26 @@ import {
                                 <Aboutmehome/>
                             </div> 
                             <Footer/>
+                       
                         </Route>
 
-                        <Route exact path="/about-me">
+                        <Route exact path="/aboutme">
+                                    <Header/>
                                     <Aboutme/>
+                                    <Footer/>
                         </Route>    
 
                         <Route exact path="/contact">
+                                    <Header/>
                                     <Contact/>
+                                    <Footer/>
                         </Route> 
 
-
+                        <Route exact path="/testimonies">
+                                    <Header/>
+                                    <Testimonies/>
+                                    <Footer/>
+                        </Route> 
 
 
 

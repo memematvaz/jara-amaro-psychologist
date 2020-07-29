@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import portrait from '../images/portrait.jpg'
 
@@ -11,7 +12,9 @@ const Aboutmehome = () => {
                 <p>Trabajo para que personas como tú puedan recuperar su vida lo antes posible sin tener que esperar meses hasta ver los primeros resultados.</p>
                 <p>Me esfuerzo para que logres en menos de siete sesiones tener una vida en la que te sientas a gusto y aprendas a transformar lo que te duele en un motivo por el que levantarte todas las mañanas.</p>
                 <p>Es tu vida: te pertenece y tienes el derecho a disfrutarla como te mereces. Quiero guiarte en ese trayecto y te acompañaré, a través de mi experiencia y herramientas, para que llegues a ese estado de bienestar que necesitas.</p>
-                <div className="read-more">Leer más</div>
+                <Link className="link" to="/aboutme">              
+                    <div className="read-more">Leer más</div>
+                </Link>
             </div>
         </div>
     )
