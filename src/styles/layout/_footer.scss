@@ -4,6 +4,8 @@
   background-color: $cold-dark-color;
   margin: 0px;
 
+  .footer__logo-rrss-container{
+    border-bottom: solid 1px $inverted-text-color;
   .footer__logo-container{
       height: 60px;
       @include mobile-logo;
@@ -22,6 +24,33 @@
       }
   }
 
+  .footer-rrss {
+    display: flex;
+    flex-direction: row;
+    
+  li {
+  padding: 10px;
+    img {
+      height: 35px;}
+  }
+  }
+  }
+
+.footer__menu-list {
+  @include mobile-text;
+  border-bottom: solid 1px $inverted-text-color;
+  color: $inverted-text-color;
+  font-weight: 900;
+  li {
+    padding: 8px;
+  }
+}
+.footer__workers-list{
+  @include mobile-text;
+  border-bottom: solid 1px $inverted-text-color;
+  color: $inverted-text-color;
+  font-weight: 900;
+}
 }
 
 
