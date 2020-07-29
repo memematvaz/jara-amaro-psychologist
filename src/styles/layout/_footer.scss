@@ -47,7 +47,6 @@
 }
 .footer__workers-list{
   @include mobile-text;
-  border-bottom: solid 1px $inverted-text-color;
   color: $inverted-text-color;
   font-weight: 900;
 }
@@ -57,9 +56,49 @@
 @media (min-width: 768px) {
 
   .footer {
-    padding-top: 15px;
+    .footer__without-workers{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: solid 1px $inverted-text-color;
+      color: $inverted-text-color;
+    .footer__logo-rrss-container{
+      border-bottom: none;
+      padding: 12px;
+  
+    .footer-rrss {
 
+    li {
+
+      img {
+}
+    }
+    }
+    }
+  
+  .footer__menu-list {
+    @include tablet-text;
+    border-bottom: none;
+    color: $inverted-text-color;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    min-width: 235px;
+    
+        li {
+      padding: 8px;
+    }
   }
+
+}
+  .footer__workers-list{
+    @include mobile-text;
+    color: $inverted-text-color;
+    font-weight: 900;
+  }
+  }
+  
+  
 
 
 }

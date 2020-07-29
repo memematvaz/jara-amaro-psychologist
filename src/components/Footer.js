@@ -10,6 +10,7 @@ const Footer = () => {
 
     return (
         <footer className="footer">
+            <div className="footer__without-workers">
             <div className="footer__logo-rrss-container">
                 <Link className="link" to="/">
                 <div className="footer__logo-container">
@@ -34,19 +35,25 @@ const Footer = () => {
             
             <nav>
                 <ul className="footer__menu-list container">
-                    <li>Consultas</li>
-                    <Link className="link" to="/testimonies">
-                        <li>Testimonios</li>
-                    </Link>
-                    <Link className="link" to="/contact">
-                        <li>Contacto</li>
-                    </Link>
-                    <Link className="link" to="/aboutme">
-                        <li>Sobre mí</li>
-                    </Link>
-                    <li>Blog</li>
+                    <div>
+                        <li>Consultas</li>
+                        <Link className="link" to="/testimonies">
+                            <li>Testimonios</li>
+                        </Link>
+                        <Link className="link" to="/contact">
+                            <li>Contacto</li>
+                        </Link>
+                    </div>
+                    <div>
+                        <Link className="link" to="/aboutme">
+                            <li>Sobre mí</li>
+                        </Link>
+                        <li>Blog</li>
+                    </div>
                 </ul>
             </nav>
+            </div>
+
             <div className="footer__workers-list container">
                 <p><a href="https://www.linkedin.com/in/maria-mateo-vazquez/">Desarrollo web María Mateo</a></p>
                 <p><a href="https://www.linkedin.com/in/anaamarovazquez/">Redes sociales Ana Amaro</a></p>
