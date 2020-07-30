@@ -3,7 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 
     .about-me-home__image{
        
@@ -19,21 +21,23 @@
         border-radius: 150px;
     }
     .about-me-home__text-container{
-        padding-top: 20px;
-        padding-bottom: 20px;
+    
         h2{
             @include mobile-title;
             color: $cold-dark-color;
+            padding-top: 40px;
+            padding-bottom: 20px;
 
         }
         p{
             @include mobile-text;
-
+            padding-top: 5px;
         }
         .read-more{
             @include mobile-text;
             color: $hot-dark-color;
             font-weight: 900;
+            padding-top: 30px;
         }
     }
 }
@@ -46,7 +50,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 15px;
-    
+        max-width: 1500px;
         .about-me-home__image{
            
             background-size: contain;
@@ -61,6 +65,7 @@
         }
         .about-me-home__text-container{
             width: calc(100vw - 300px);
+            max-width: 1000px;
             h2{
                 @include tablet-title;
                 color: $cold-dark-color;

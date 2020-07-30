@@ -8,9 +8,10 @@ class Main extends React.Component {
         return ( 
             <>
             <div className="main__container">
-                <h3>Pasa el tiempo y <span className="bold-title">empiezas a pensar que tú eres el problema:</span> crees que nunca podrás escapar de ese callejón sin salida en el que te encuentas.</h3>
+                <h3 className="container">Pasa el tiempo y <span className="bold-title">empiezas a pensar que tú eres el problema:</span> </h3>
                 <div className="main__lists-container">
-                    <ul className="main__first-list">
+                    <ul className="main__first-list container">
+                        <li>Crees que nunca podrás escapar de ese callejón sin salida en el que te encuentas.</li>
                         <li>Has probado todo tipo de terapias, pero sigues sin ver los resultados</li>
                         <li>Vas a las sesiones con compromiso, realizas las actividades y pones de tu parte, pero sientes que no avanzas.</li>
                         <li>Los meses pasan, las sesiones se alargan y tu frustración por no ver mejoría se acumula.</li>

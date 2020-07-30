@@ -1,6 +1,9 @@
 .card-list__introduction{
     @include mobile-title;
     color: $hot-dark-color;
+    margin: 0px;
+    padding: 30px;
+    padding-top: 50px;
 }
 
 
@@ -8,6 +11,9 @@
     @include mobile-title;
     color: $cold-dark-color;
     mix-blend-mode: multiply; 
+    padding: 30px;
+    padding-top: 50px;
+    margin: 0px;
 }
 
 .card-list__container{

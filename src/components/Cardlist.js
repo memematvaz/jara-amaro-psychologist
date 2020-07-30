@@ -13,7 +13,7 @@ const CardList = (props) => {
             <>
 
                       
-            <h2 className="card-list__title container">Estoy aquí para ayudarte. <br/>
+            <h2 className="card-list__title container" id="cardList">Estoy aquí para ayudarte. <br/>
                     <span className="bold-title">Tú decides como.</span>
                 </h2>
 

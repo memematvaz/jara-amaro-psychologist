@@ -27,13 +27,13 @@ const Card = (props) => {
                         <i className={ props.icon }>
                         </i>
                     </div>
-                    <h4 className="container">Consultas <span className="card__breakline"><br/></span>
+                    <h4>Consultas <span className="card__breakline"><br/></span>
                     { props.title }</h4>
                    
                 </div>
-                <div className="card__text-container container">
+                <div className="card__text-container">
                     <p className="card__text">{ props.text } </p>
-                    <p className="card__text">{ props.price } </p>
+                    <p className="card__text bold-title price">{ props.price } </p>
                     <div className="read-more"  onClick={ toggleCard }>Leer más</div>
                     
                 </div>

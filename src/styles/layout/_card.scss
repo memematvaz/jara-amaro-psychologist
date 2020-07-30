@@ -9,11 +9,13 @@
     flex-direction: column;
     justify-content: space-between;
 
+
     .card__header{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         height: 70px;
+
 
         .card-details__close-icon{
             display: none;
@@ -41,12 +43,15 @@
             text-align: end;
             margin-right: 12px;
             margin-top: 10px;
+            text-transform: uppercase;
+            padding: 12px;
 
         }
     }
     .card__text-container{
         display: flex;
         flex-direction: column;
+        padding: 12px;
 
        .card__text{
         @include mobile-text;

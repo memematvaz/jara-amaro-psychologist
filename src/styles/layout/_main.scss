@@ -3,39 +3,50 @@
     h3 {
         @include mobile-title;
         background-color: $hot-light-color;
-        padding: 10px;
+       
         margin: 0px;
+        padding-top: 50px;
     }
 
     .main__lists-container{
-        
+        ul{
+            text-indent: -1.3rem;
+
+
+        }
         li {
             @include mobile-text;
             padding-top: 3px;
             padding-bottom: 3px;
+            padding-left: 30px;
             list-style: disc;            
             list-style-type: disc; 
             list-style-position: inside; 
         }
         .main__first-list {
             background-color: $hot-light-color;
-            padding: 10px;
+            padding: 30px;
+            padding-bottom: 50px;
+            h3{ 
+                padding: 30px;}
            
         }
         .main__second-list-container{
             background-color: white;
-            
+            padding: 30px;
+
      
 
             h3 {
                 color: $cold-dark-color;
-                padding: 0 px;
+                padding: 30px;
+                padding-left: 0px;
                 margin: 0px;
                 background-color: white;
             }
 
             li{
-                padding-left: 10px;
+                padding-left: 30px;
             }
 
         }

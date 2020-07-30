@@ -1,25 +1,38 @@
 .footer {
-  padding-top: 5px;
+
+
+
   
   background-color: $cold-dark-color;
   margin: 0px;
 
+
   .footer__logo-rrss-container{
     border-bottom: solid 1px $inverted-text-color;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;  
+    padding-bottom: 15px;
+
   .footer__logo-container{
-      height: 60px;
-      @include mobile-logo;
+    height: 40px;
+    @include mobile-logo;
+
 
 
       .footer__logo-image-container{
-          height: 50px;
+        padding: 10px;
+        height: 40px;
           img {
-              height: 50px;
+              height: 45px;
           }
       }
       .footer__logo-title{
         color: $inverted-text-color;          
-        font-size: 20px;
+        font-size: 19px;
           
       }
   }
@@ -30,26 +43,21 @@
     
   li {
   padding: 10px;
+  padding-top: 0px;
     img {
-      height: 35px;}
+      height: 30px;}
   }
   }
   }
 
-.footer__menu-list {
-  @include mobile-text;
-  border-bottom: solid 1px $inverted-text-color;
-  color: $inverted-text-color;
-  font-weight: 900;
-  li {
-    padding: 8px;
-  }
-}
+
 .footer__workers-list{
-  @include mobile-text;
+  font-family: $text-font;
+  font-size: 18px;
+  line-height: 1;  
   color: $inverted-text-color;
-  font-weight: 900;
-}
+  text-align: center;
+  }
 }
 
 
@@ -66,14 +74,7 @@
       border-bottom: none;
       padding: 12px;
   
-    .footer-rrss {
-
-    li {
-
-      img {
-}
-    }
-    }
+   
     }
   
   .footer__menu-list {

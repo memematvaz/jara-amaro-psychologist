@@ -20,8 +20,8 @@ const Header = () => {
     return (
         <header className="header">
              <Link className="link" to="/">
-                <div className="header__logo-container">
-                    <div className="header__logo-image-container container">
+                <div className="header__logo-container" id="returnHome">
+                    <div className="header__logo-image-container">
                         <img src={ logo } alt="logo Jara Amaro psicóloga"></img>
                     </div>
                     <h1 className="header__logo-title">Jara Amaro<br/>
@@ -36,7 +36,12 @@ const Header = () => {
                         <span className="header__third-bar"></span>
                     </div>
                         <ul className="header__menu-list">
+                            <Link className="link" to="/">
+                                <li>Inicio</li>
+                            </Link>
+                            <Link className="link" to="/#cardList">
                             <li>Consultas</li>
+                            </Link>
                             <Link className="link" to="/testimonies">
                                 <li>Testimonios</li>
                             </Link>

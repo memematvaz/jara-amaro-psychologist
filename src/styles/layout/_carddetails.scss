@@ -41,13 +41,14 @@
             text-align: end;
             margin-right: 15px;
             margin-top: 10px;
-
+            text-transform: uppercase;
+            padding: 12px;
         }
     }
     .card__text-container{
         display: flex;
         flex-direction: column;
-        
+        padding: 12px;
 
        .card__text{
         @include mobile-text;
@@ -66,13 +67,17 @@
         margin-right: 15px;
         margin-bottom: 10px;
        }
+     .price{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
     }
     .card-details__text-container{
         display: block;
         @include mobile-text;
         text-align: end;
-        margin-right: 15px;
-        margin-top: 0px;
         padding-top: 0px;
 
         h5{
@@ -85,6 +90,8 @@
         }
 
         .card-details__mobile-no{display: none;}
+
+
 
         .read-less{
             @include mobile-text;

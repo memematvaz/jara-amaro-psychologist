@@ -13,8 +13,11 @@
     .header__logo-container{
         height: 60px;
         @include mobile-logo;
+        padding-left: 20px;
+        padding-top: 5px;
 
         .header__logo-image-container{
+            padding: 10px;
             height: 50px;
             img {
                 height: 50px;
@@ -36,15 +39,16 @@
         @include mobile-text;
         
         .header__hamburger-container{
-          padding: 22px;
+          padding: 25px;
+          padding-top: 30px;
         }
         
         span
         {
           display: block;
-          width: 33px;
+          width: 35px;
           height: 4px;
-          margin-bottom: 5px;
+          margin-bottom: 7px;
           position: relative;
           
           background: $cold-dark-color;
@@ -67,9 +71,10 @@
     .header__hamburger-open{
       @include mobile-text;
 
+      
       .header__hamburger-container{
-        padding: 22px;
-      }
+        padding: 25px;
+        padding-top: 30px;      }
 
       span
         {
@@ -119,8 +124,9 @@
         position: fixed;
         width: 300px;
         margin: -100px 0 0 150px;
-        padding: 50px;
-        padding-top: 125px;
+        margin-top: 0px;
+        padding: 30px;
+        padding-top: 30px;
         transform: translate(-100%, 0);
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16); 
         li {
