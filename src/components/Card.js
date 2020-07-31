@@ -33,7 +33,7 @@ const Card = (props) => {
                 </div>
                 <div className="card__text-container">
                     <p className="card__text">{ props.text } </p>
-                    <p className="card__text bold-title price">{ props.price } </p>
+                    <p className="bold-title price">{ props.price } </p>
                     <div className="read-more"  onClick={ toggleCard }>Leer más</div>
                     
                 </div>

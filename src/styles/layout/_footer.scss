@@ -1,25 +1,21 @@
 .footer {
-
-
-
   
-  background-color: $cold-dark-color;
-  margin: 0px;
-
+    background-color: $cold-dark-color;
+    margin: 0px;
 
   .footer__logo-rrss-container{
-    border-bottom: solid 1px $inverted-text-color;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;  
-    padding-bottom: 15px;
+      border-bottom: solid 1px $inverted-text-color;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 15px;  
+      padding-bottom: 15px;
 
-  .footer__logo-container{
-    height: 40px;
-    @include mobile-logo;
+      .footer__logo-container{
+        height: 40px;
+        @include mobile-logo;
 
 
 
@@ -30,6 +26,7 @@
               height: 45px;
           }
       }
+
       .footer__logo-title{
         color: $inverted-text-color;          
         font-size: 19px;
@@ -41,14 +38,16 @@
     display: flex;
     flex-direction: row;
     
-  li {
-  padding: 10px;
-  padding-top: 0px;
-    img {
-      height: 30px;}
+      li {
+      padding: 10px;
+      padding-top: 0px;
+
+        img {
+          height: 30px;
+        }
+      }
   }
-  }
-  }
+}
 
 
 .footer__workers-list{
@@ -57,6 +56,7 @@
   line-height: 1;  
   color: $inverted-text-color;
   text-align: center;
+  display: block;
   }
 }
 

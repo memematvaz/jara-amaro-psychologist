@@ -1,10 +1,10 @@
 .card__container{
     background-color: white;
-    border-radius: 38px 20px 20px 20px;
+    border-radius: 38px 10px 10px 10px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);   
-    margin: 20px;
-    width: 230px;
-    height: 340px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,6 +38,10 @@
 
         h4 {
             @include mobile-text;
+            font-size: 15px;
+            letter-spacing: 1px;
+            color: $card-title;
+            line-height: 1.5;
             font-weight: 900;
             margin: 0px;
             text-align: end;
@@ -48,25 +52,30 @@
 
         }
     }
+
     .card__text-container{
         display: flex;
         flex-direction: column;
-        padding: 12px;
+        padding: 20px;
+        
 
        .card__text{
-        @include mobile-text;
-        text-align: end;
-        margin-right: 15px;
-        margin-top: 10px;
+            @include mobile-text;
+            margin-top: 10px;
        } 
+         .price{
+            @include mobile-text; 
+                color: $card-title;
+                text-align: right;
+            }
+
        .read-more{
-        @include mobile-text;
-        font-weight: 900;
-        color: $hot-dark-color;
-        text-align: end;
-        margin-right: 15px;
-        margin-bottom: 10px;
+            @include mobile-text;
+            font-weight: 900;
+            color: $hot-dark-color;
+            text-align: end;
        }
+
        .read-less{
            display: none;
        }

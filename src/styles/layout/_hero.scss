@@ -4,6 +4,7 @@
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
+    margin-top: 69px;
 
         .hero__background-image{
         width: 100vw;
@@ -23,6 +24,7 @@
         h2 {
             @include mobile-title;
             color: $hot-dark-color;
+            margin-top: 2px;
         }
 
         p { 
@@ -31,7 +33,7 @@
 
         .button{
             @include mobile-button;
-            margin-bottom: 20px;
+            margin-top: 14px;
         }
     }
 

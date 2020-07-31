@@ -1,10 +1,10 @@
 .card-details__container{
     background-color: white;
-    border-radius: 38px 20px 20px 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);   
-    margin: 20px;
-    min-width: 230px;
-    height: auto;
+    border-radius: 38px 10px 10px 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+    margin: 20px 0;
+    width: 100%;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,10 +36,14 @@
 
         h4 {
             @include mobile-text;
+            font-size: 15px;
+            letter-spacing: 1px;
+            color: $card-title;
+            line-height: 1.5;
             font-weight: 900;
             margin: 0px;
             text-align: end;
-            margin-right: 15px;
+            margin-right: 12px;
             margin-top: 10px;
             text-transform: uppercase;
             padding: 12px;
@@ -48,36 +52,35 @@
     .card__text-container{
         display: flex;
         flex-direction: column;
-        padding: 12px;
+        padding: 20px;
 
        .card__text{
-        @include mobile-text;
-        text-align: end;
-        margin-right: 15px;
+            @include mobile-text;
+            margin-top: 10px;
+        }
+        
+        .price{
+            @include mobile-text; 
+                color: $card-title;
+                text-align: left;
+                margin-bottom: 0px;
+            }
 
-       } 
        .read-more{
             display: none;
        }
+
        .read-less{
         @include mobile-text;
         font-weight: 900;
         color: $hot-dark-color;
         text-align: end;
-        margin-right: 15px;
-        margin-bottom: 10px;
-       }
-     .price{
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-top: 8px;
-        margin-bottom: 0px;
+        }
     }
-    }
+
     .card-details__text-container{
         display: block;
         @include mobile-text;
-        text-align: end;
         padding-top: 0px;
 
         h5{

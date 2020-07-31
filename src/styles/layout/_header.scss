@@ -11,23 +11,24 @@
     margin: 0px;
 
     .header__logo-container{
-        height: 60px;
-        @include mobile-logo;
-        padding-left: 20px;
-        padding-top: 5px;
+      height: 60px;
+      @include mobile-logo;
+      padding-left: 20px;
+      padding-top: 5px;
 
-        .header__logo-image-container{
-            padding: 10px;
-            height: 50px;
-            img {
-                height: 50px;
-            }
-        }
-        .header__logo-title{
-            color: $cold-dark-color;
-            font-size: 20px;
-            
-        }
+      .header__logo-image-container{
+          padding: 10px;
+          height: 50px;
+          img {
+              height: 50px;
+          }
+      }
+
+      .header__logo-title{
+          color: $cold-dark-color;
+          font-size: 20px;
+          font-weight:200;    
+      }
     }
 
     li:hover {
@@ -120,15 +121,14 @@
         display: block;
         transition: 0.3s; 
         background-color: $inverted-text-color; 
-        opacity: 0.9;
         position: fixed;
         width: 300px;
         margin: -100px 0 0 150px;
         margin-top: 0px;
-        padding: 30px;
-        padding-top: 30px;
+        padding: 20px;
         transform: translate(-100%, 0);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16); 
+        box-shadow: -9px 8px 10px rgba(0, 0, 0, 0.16);
+        border-top: 1px solid #f1f1f1;
         li {
           padding: 10px 0;
           font-size: 22px;
