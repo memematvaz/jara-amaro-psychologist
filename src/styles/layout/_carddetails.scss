@@ -112,18 +112,18 @@
     position: fixed;
     z-index: 99;
     top: 100px;
-   height: auto;
-    max-width: 90vw;
-    min-width: 50vw;
-    min-height: 50vh;
-    max-height: calc(100vh - 120px);
-    left: 15px;
+    left: 50px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);  
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    max-width: 90vw;
+    min-width: 90vw;
+    min-height: 50vh;
+
     
 
     .card__header{
@@ -164,6 +164,7 @@
         text-align: center;
         padding: 20px 0 0 0;  
         color: $hot-dark-color;
+        text-transform: none;
         .card__breakline{
             display: none;
         }

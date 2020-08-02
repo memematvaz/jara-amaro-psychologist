@@ -2,7 +2,7 @@
     @include mobile-title;
     color: $hot-dark-color;
     margin: 0px;
-    padding: 60px 30px;
+    padding: 55px 30px;
     background: #f9f9f9;
 }
 
@@ -32,8 +32,7 @@
     .card-list__introduction{
          @include tablet-title;
         color: $hot-dark-color;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 80px 60px;
 
     
     }

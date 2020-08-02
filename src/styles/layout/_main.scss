@@ -7,7 +7,7 @@
        
         margin: 0px;
         padding-top: 50px;
-        padding-bottom: 0;
+        padding-bottom: 0px;
         color: $dark-color;
     }
 
@@ -22,7 +22,8 @@
             &::before {
                 content: '·';
                 margin-left: -11px;
-                margin-right: 5px;}
+                margin-right: 5px;
+            }
         }
 
         .main__first-list {
@@ -49,62 +50,52 @@
             }
         }
     }
-
-
 }
 
 
 
 @media (min-width: 768px) {
     .main__container {
-
+        padding-bottom: 0px;
         h3 {
             @include tablet-title;
             background-color: $hot-light-color;
-            padding: 20px;
+            padding: 60px 80px;
             margin: 0px;
-            padding-right: 70px;
+            padding-bottom: 30px;
+
         }
     
         .main__lists-container{
 
             li {
                 @include tablet-text;
-                padding-top: 3px;
-                padding-bottom: 3px;
-                list-style: disc;            
-                list-style-type: disc; 
-                list-style-position: inside; 
-                
-    
+                padding-top: 7px;
+                padding-bottom: 7px;
+                line-height: 1.5;
             }
+
             .main__first-list {
-                background-color: $hot-light-color;
-                padding: 20px;
-                padding-right: 70px;
+                padding-left: 80px;
+                padding-bottom: 50px;
+                padding-top: 0px;
+                padding-right: 60px;
                
             }
             .main__second-list-container{
                
-                background-color: white;     
-
+                padding: 60px;
                     
                 h3 {
-                    color: $cold-dark-color;
-                    padding: 20px;
+                    padding-bottom: 30px;
+                    padding-left: 0px;
+                    padding-top: 0px;
                     margin: 0px;
-                    background-color: white;
-                }
-    
-                li{
-                    padding-left: 20px;
-                    padding-right: 30px;
-                }
-    
+                }    
             }
         }
     
-        
+      
     }
 }
 

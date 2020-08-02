@@ -47,9 +47,9 @@
         span
         {
           display: block;
-          width: 35px;
+          width: 33px;
           height: 4px;
-          margin-bottom: 7px;
+          margin-bottom: 6px;
           position: relative;
           
           background: $cold-dark-color;
@@ -133,13 +133,7 @@
           padding: 10px 0;
           font-size: 22px;
         }
-
-
       }
-
-
-
-      
   }
 }
 
@@ -148,26 +142,24 @@
 @media (min-width: 768px) {
 
     .header {
-  height: 100px;
+      height: 100px;
+
       li {
         @include tablet-text; 
         color: $cold-dark-color;
-        font-weight: bold;
+        font-weight: 400;
         padding: 10px;
-
       }
 
       li:hover {
         color: $hot-dark-color;
         transition: color 0.3s ease;
-       
-    }
+      }
   
     .header__hamburger-container{
-
-            display: none;
-          
+       display: none;    
       }
+
       .header__hamburger-close , .header__hamburger-open {
 
             .header__menu-list {
@@ -175,12 +167,7 @@
               flex-direction: row;
               margin: 0;
               box-shadow: 0;
-              
-              li {
-                
-              }
-      
-            }
+              padding-right: 20px;
 
       }
   
@@ -219,3 +206,4 @@
 
 
 
+}

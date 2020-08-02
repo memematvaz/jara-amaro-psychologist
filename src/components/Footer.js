@@ -34,11 +34,14 @@ const Footer = () => {
             </div>
 
             <small className="footer__workers-list container">
-                <p><a href="https://www.linkedin.com/in/maria-mateo-vazquez/">Desarrollo web María Mateo</a></p>
-                <p><a href="https://www.linkedin.com/in/anaamarovazquez/">Redes sociales Ana Amaro</a></p>
-                <p><a href="https://www.linkedin.com/in/sandra-garc%C3%ADa-moreno-45a811176/">Copywriter Sandra García</a></p>
-                <p><a href="https://www.instagram.com/sara_m.lo.photo/">Fotografía Sara M</a></p>
-
+               <div>
+                    <p><a href="https://www.linkedin.com/in/maria-mateo-vazquez/">Desarrollo web María Mateo</a></p>
+                    <p><a href="https://www.linkedin.com/in/anaamarovazquez/">Redes sociales Ana Amaro</a></p>
+                </div>
+                <div>
+                    <p><a href="https://www.linkedin.com/in/sandra-garc%C3%ADa-moreno-45a811176/">Copywriter Sandra García</a></p>
+                    <p><a href="https://www.instagram.com/sara_m.lo.photo/">Fotografía Sara M</a></p>
+                </div>
             </small> 
         </footer>
     );
