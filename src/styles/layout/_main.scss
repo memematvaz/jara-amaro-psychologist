@@ -87,11 +87,17 @@
                 padding: 60px;
                     
                 h3 {
-                    padding-bottom: 30px;
-                    padding-left: 0px;
+                    padding-bottom: 40px;
+                    padding-left: 10px;
                     padding-top: 0px;
                     margin: 0px;
                 }    
+
+                .main__second-list {
+                    padding: 0;
+                    margin: 0;
+                    padding-left: 10px;
+                }
             }
         }
     
@@ -102,51 +108,45 @@
 @media (min-width: 1200px) {
     .main__container {
         background-color: $hot-light-color;  
-        padding: 50px; 
-        padding-left: 0px;     
+        min-height: 600px;
+    
         h3 {
             @include tablet-title;
             background-color: $hot-light-color;
-            padding: 20px;
-            margin: 0px;
-            padding-right: 180px;
-            padding-left: 100px;
+            padding-top: 80px;
+            padding-left: 120px;
             padding-bottom: 50px;
+
         }
     
         .main__lists-container{
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            padding-right: 100px;
-            padding-bottom: 20px;
+            justify-content: unset;
+            padding-left: 40px;
 
             li {
                 @include tablet-text;
-                padding-top: 3px;
-                padding-bottom: 3px;
-                list-style: disc;            
-                list-style-type: disc; 
-                list-style-position: inside; 
-                padding-left: 80px;
-                
-    
             }
+
             .main__first-list {
-                background-color: $hot-light-color;
-                padding: 20px;
-                padding-right: 30px;
-                max-width: 750px;
+                padding-left: 80px;
+                padding-bottom: 80px;
+                padding-top: 0px;
+                padding-right: 60px;
+                margin-top: 15px;
                
             }
+
             .main__second-list-container{
-                background-color: white;
-                border-radius: 2px;
-                min-width: 515px;
-                max-width: 540px;
-                max-height: 375px;
-                min-height: 300px;
+                border-radius: 5px;
                 box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+                padding: 50px;
+                max-width: 70vw;
+                margin-bottom: 100px;
+                margin-right: 70px;
+
+            }
                
                 
     
@@ -154,18 +154,17 @@
                     color: $cold-dark-color;
                     background-color: white;
                     margin: 0px;
-                    padding: 30px;
-                    padding-right: 20px;
-                }
-    
-                li{
-                    padding-left: 30px;
-                    padding-right: 20px;
-                }
-    
+                    padding-right: 0px;
+
+
+                    padding-bottom: 40px;
+                    padding-left: 10px;
+                    padding-top: 0px;
+                    
+                }    
             }
         }
     
     
     }
-}
+

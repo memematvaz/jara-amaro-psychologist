@@ -16,7 +16,7 @@
       .footer__logo-container{
         height: 40px;
         @include mobile-logo;
-
+        
 
 
       .footer__logo-image-container{
@@ -30,7 +30,8 @@
       .footer__logo-title{
         color: $inverted-text-color;          
         font-size: 19px;
-          
+        font-weight: 200;
+
       }
   }
 
@@ -64,6 +65,13 @@
 @media (min-width: 768px) {
 
   .footer {
+    .footer__logo-rrss-container{
+      padding-right: 80px;
+      padding-left: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
     .footer__workers-list, .container{
       @include mobile-text;
