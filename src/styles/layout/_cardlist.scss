@@ -29,6 +29,11 @@
     background-image:none;
 }
 
+.card-list__pc-background-container__another-page{
+    background-image:none;
+    margin-top: 120px;
+}
+
 
 @media (min-width: 768px) {
     .card-list__introduction{
@@ -98,4 +103,14 @@
         background-repeat: no-repeat;
         background-position: 0px 20px;
         }
+
+    .card-list__pc-background-container__another-page{
+
+    background-image: url("../../images/fondo-tipos2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 28px;
+    margin-top: 180px;
+    margin-bottom: 100px;
+    }
 }
