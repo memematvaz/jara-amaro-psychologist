@@ -10,6 +10,7 @@ import Footer from './Footer';
 import Aboutme from './Aboutme';
 import Contact from './Contact';
 import Testimonies from './Testimonies';
+import Linktocontact from './Linktocontact';
 
 import { Route, Switch } from 'react-router-dom';
 
@@ -58,6 +59,7 @@ import { Route, Switch } from 'react-router-dom';
                                     <Header/>
                                     <div className="card-list__pc-background-container__another-page">
                                         <Cardlist/>
+                                        <Linktocontact/>
                                     </div>
                                     <Footer/>
                         </Route> 
