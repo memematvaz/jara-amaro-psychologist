@@ -19,7 +19,7 @@ const THERAPIES =[
         id:2,
         icon:'fas fa-desktop',
         title: ' online',
-        price:'1 hora 40 €',
+        price:'1 hora 45 €',
         text: 'Perfecto para ti si no deseas o te es imposible desplazarte.',
         details: {
             how: 'La sesión se realizaría mediante videoconferencia mediante Skype.',                 

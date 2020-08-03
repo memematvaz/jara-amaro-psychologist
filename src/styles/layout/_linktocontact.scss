@@ -1,0 +1,57 @@
+.link-to-contact__container {
+    padding-bottom: 70px;
+    .link-to-contact__title{
+        @include mobile-title;
+        color: $hot-dark-color;
+        margin-top: 2px;
+    }
+    p{
+        @include mobile-text; 
+    }
+
+    .button{
+        @include mobile-button;
+    }
+}
+
+@media (min-width: 768px) {
+    .link-to-contact__container {
+        padding-top: 0px;
+        padding-bottom: 70px;
+        .link-to-contact__title{
+            @include tablet-title;
+            color: $hot-dark-color;
+            margin-top: 2px;
+        }
+        p{
+            @include tablet-text; 
+        }
+    
+        .button{
+            @include tablet-button;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .link-to-contact__container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 120px;
+        padding-right: 180px;
+        .link-to-contact__title{
+            @include pc-title;
+            color: $hot-dark-color;
+            margin-top: 2px;
+        }
+        p{
+            @include pc-text; 
+        }
+    
+        .button{
+            @include pc-button;
+        }
+    }
+}

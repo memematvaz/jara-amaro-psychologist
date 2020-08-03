@@ -1,0 +1,146 @@
+.about-me__image{
+    width: 100%;
+    height: 500px;
+     background-image: url("../../images/heroaboutme.jpg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     margin: 0px;
+     margin-top: 80px;
+ }
+
+.about-me__container {
+  
+        .about-me__questions, p{
+            @include mobile-text;
+            padding-top: 5px;
+        }
+        h3{
+            @include mobile-title;
+            color: $cold-dark-color;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+        }
+
+        .about-me__orange-title{
+            color: $hot-dark-color;
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+
+        ul{
+            @include mobile-text;
+            
+            li{
+                padding-top: 6px;
+                padding-bottom: 6px;
+                line-height: 1.5;
+                &::before {
+                    content: '·';
+                    margin-left: -11px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+
+@media (min-width: 768px) {
+    .about-me__image{
+        width: 100%;
+        height: 700px;
+         background-image: url("../../images/heroaboutme.jpg");
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+
+             }
+    
+    .about-me__container {
+      
+            .about-me__questions, p{
+                @include tablet-text;
+                padding-top: 5px;
+            }
+            h3{
+                @include tablet-title;
+                color: $cold-dark-color;
+                padding-top: 30px;
+                padding-bottom: 30px;
+    
+            }
+    
+            .about-me__orange-title{
+                color: $hot-dark-color;
+                padding-top: 0px;
+                margin-top: 0px;
+            }
+    
+            ul{
+                @include tablet-text;
+                
+                li{
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    line-height: 1.5;
+                    &::before {
+                        content: '·';
+                        margin-left: -11px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+}
+
+@media (min-width: 1200px) {
+    .about-me__image{
+        width: 100%;
+        height: 100vh;
+         background-image: url("../../images/heroaboutme.jpg");
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+
+             }
+    
+    .about-me__container {
+        padding-left: 120px;
+        padding-right: 180px;
+        padding-bottom: 0px;
+        padding-top: 80px;
+            .about-me__questions, p{
+                @include tablet-text;
+                padding-top: 5px;
+            }
+            h3{
+                @include tablet-title;
+                color: $cold-dark-color;
+                padding-top: 30px;
+                padding-bottom: 30px;
+    
+            }
+    
+            .about-me__orange-title{
+                color: $hot-dark-color;
+                padding-top: 0px;
+                margin-top: 0px;
+            }
+    
+            ul{
+                @include tablet-text;
+                
+                li{
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    line-height: 1.5;
+                    &::before {
+                        content: '·';
+                        margin-left: -11px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+}

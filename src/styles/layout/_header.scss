@@ -146,9 +146,11 @@
 
       li {
         @include tablet-text; 
+        font-size: 18px;
         color: $cold-dark-color;
         font-weight: 400;
         padding: 10px;
+
       }
 
       li:hover {
