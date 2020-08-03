@@ -4,7 +4,7 @@ import THERAPIES from './services/TherapiesJSON';
 import Card from './Card'
 
 
-const CardList = (props) => {
+const CardList = () => {
     const therapies = THERAPIES;
 
 
