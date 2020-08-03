@@ -25,7 +25,9 @@
     align-items: center;
 }
 
-
+.card-list__pc-background-container{
+    background-image:none;
+}
 
 
 @media (min-width: 768px) {
@@ -47,9 +49,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+      
     }
 
-    
+  
 }
 
 
@@ -89,6 +92,7 @@
     }
 
     .card-list__pc-background-container{
+ 
         background-image: url("../../images/fondo-tipos2.svg");
         background-size: contain;
         background-repeat: no-repeat;

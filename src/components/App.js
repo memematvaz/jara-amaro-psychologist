@@ -36,25 +36,31 @@ import { Route, Switch } from 'react-router-dom';
                        
                         </Route>
 
-                        <Route exact path="/aboutme">
+                        <Route exact path="/sobre-mi">
                                     <Header/>
                                     <Aboutme/>
                                     <Footer/>
                         </Route>    
 
-                        <Route exact path="/contact">
+                        <Route exact path="/contacto">
                                     <Header/>
                                     <Contact/>
                                     <Footer/>
                         </Route> 
 
-                        <Route exact path="/testimonies">
+                        <Route exact path="/testimonios">
                                     <Header/>
                                     <Testimonies/>
                                     <Footer/>
                         </Route> 
 
-
+                        <Route exact path="/consultas">
+                                    <Header/>
+                                    <div className="card-list__pc-background-container__another-page">
+                                        <Cardlist/>
+                                    </div>
+                                    <Footer/>
+                        </Route> 
 
                     </Switch>
   
