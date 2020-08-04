@@ -8,6 +8,12 @@ class ScrollToTop extends React.Component {
     ) {
       window.scrollTo(0, 0);
     }
+
+    if (
+      this.props.location.pathname === prevProps.location.pathname
+    ) {
+      window.scrollTo(0, 0);
+    }
   }
 
   render() {
