@@ -1,16 +1,12 @@
 const TESTIMONIES =[
     {
         id:1,
-        text: `Excelente profesional, muy dedicada a su trabajo, atenciosa, amable e inteligente. A mi me ayudó muchísimo y obtuve resultados positivos muy rápidos. También me ha enseñado técnicas para relacionarse tanto a nivel sentimental como professional que serán utiles para toda mi vida. Recomiendo este centro al 100%.`,
+        text: `Excelente profesional, muy dedicada a su trabajo, atenciosa, amable e inteligente.\n\nA mi me ayudó muchísimo y obtuve resultados positivos muy rápidos. También me ha enseñado técnicas para relacionarse tanto a nivel sentimental como professional que serán utiles para toda mi vida.\n\nRecomiendo este centro al 100%.`,
         name: 'Daiana',
     },
     {
         id:2,
-        text:`Antes de comenzar la terapia atravesaba un momento difícil: frustración por mi trabajo, ruptura sentimental, problemas de sueño y mucha ansiedad.
-        En poco tiempo he conseguido mayor autocontrol sobre mí misma, he mejorado mi ansiedad y he logrado tomar decisiones en la vida.
-        Gracias a la terapia con Jara he superado casi al completo la ruptura, he rehecho mi vida con otro chico y limado asperezas con él sobre todo en la convivencia. Además, duermo bastante mejor gracias a la relajación guiada, he logrado un mayor control de la ira y la frustración, y sobre mí misma en estado de estrés en el trabajo. También he tomado grandes decisiones como volver a estudiar (a la par que trabajar) para optar a un puesto mejor.
-        Lo que más me gustó de la terapia con Jara han sido, sin duda alguna, los resultados obtenidos. En relación al servicio lo mejor ha sido la facilidad para concretar citas vía WhatsApp, la flexibilidad en horarios (como cuando quise acudir con mi pareja y él sale tarde de trabajar), y los ejercicios prácticos que te permiten desarrollar lo aprendido.
-        Además, el material que facilita para leer, me parece un punto muy positivo porque siempre lo tengo a mano cuando lo necesito.
+        text:`Antes de comenzar la terapia atravesaba un momento difícil: frustración por mi trabajo, ruptura sentimental, problemas de sueño y mucha ansiedad.\n\nEn poco tiempo he conseguido mayor autocontrol sobre mí misma, he mejorado mi ansiedad y he logrado tomar decisiones en la vida.\n\nGracias a la terapia con Jara he superado casi al completo la ruptura, he rehecho mi vida con otro chico y limado asperezas con él sobre todo en la convivencia. Además, duermo bastante mejor gracias a la relajación guiada, he logrado un mayor control de la ira y la frustración, y sobre mí misma en estado de estrés en el trabajo. También he tomado grandes decisiones como volver a estudiar (a la par que trabajar) para optar a un puesto mejor.\n\nLo que más me gustó de la terapia con Jara han sido, sin duda alguna, los resultados obtenidos. En relación al servicio lo mejor ha sido la facilidad para concretar citas vía WhatsApp, la flexibilidad en horarios (como cuando quise acudir con mi pareja y él sale tarde de trabajar), y los ejercicios prácticos que te permiten desarrollar lo aprendido.\n\nAdemás, el material que facilita para leer, me parece un punto muy positivo porque siempre lo tengo a mano cuando lo necesito.
         `,
         name:'Esther',
     },
@@ -22,20 +18,19 @@ const TESTIMONIES =[
     },
     {
         id:4,
-        text:`Fui por un problema de ansiedad que acabó convirtiéndose en ataques de pánico. Jara supo guiarme para encontrar esos problemas que me provocaban ansiedad. Supo como tratarlos para mejorar en todos los aspectos. Hoy puedo decir que ya no sufro ataques de pánico y que sé manejar mi ansiedad y superarla. No sólo ha conseguido eso, sino que he mejorado mi autoestima y mi relación con los demás (sobre todo en habilidades sociales y manejo de la ira). 
-        Es una excelente profesional, que sabe escuchar y ayudar. Aparte es muy divertida y las sesiones son muy amenas, consigue que te sientas agusto desde la primera sesión. La recomendaría al 100%
+        text:`Fui por un problema de ansiedad que acabó convirtiéndose en ataques de pánico. Jara supo guiarme para encontrar esos problemas que me provocaban ansiedad. Supo como tratarlos para mejorar en todos los aspectos.\n\nHoy puedo decir que ya no sufro ataques de pánico y que sé manejar mi ansiedad y superarla. No sólo ha conseguido eso, sino que he mejorado mi autoestima y mi relación con los demás (sobre todo en habilidades sociales y manejo de la ira).\n\nEs una excelente profesional, que sabe escuchar y ayudar. Aparte es muy divertida y las sesiones son muy amenas, consigue que te sientas agusto desde la primera sesión. La recomendaría al 100%
         `,
         name:'Vera',
     },
     {
         id:5,
-        text:`“Jara es una excelente profesional. Fuimos por mi hija, pero yo también necesitaba su ayuda, así que me puse en sus manos. Me dio herramientas para mis problemas que han sido totalmente eficientes. Además, explica todo perfectamente, e invierte el tiempo que sea necesario. Me sentí cómoda con ella desde el principio. La recomiendo sin ninguna duda”.
+        text:`Jara es una excelente profesional. Fuimos por mi hija, pero yo también necesitaba su ayuda, así que me puse en sus manos. Me dio herramientas para mis problemas que han sido totalmente eficientes.\n\nAdemás, explica todo perfectamente, e invierte el tiempo que sea necesario. Me sentí cómoda con ella desde el principio. La recomiendo sin ninguna duda.
         `,
         name:'Sandra',
     },
     {
         id:6,
-        text:`De Jara destacaría su trato cercano y la claridad con la que comunica las cosas. Las estrategias que me enseñó me ayudaron a gestionar mis problemas y emociones desde las primeras sesiones y hasta después de finalizar la terapia. Estoy muy satisfecho y agradecido con el resultado, realmente noto un cambio positivo.
+        text:`De Jara destacaría su trato cercano y la claridad con la que comunica las cosas. Las estrategias que me enseñó me ayudaron a gestionar mis problemas y emociones desde las primeras sesiones y hasta después de finalizar la terapia.\n\nEstoy muy satisfecho y agradecido con el resultado, realmente noto un cambio positivo.
         `,
         name:'Arturo',
     },  

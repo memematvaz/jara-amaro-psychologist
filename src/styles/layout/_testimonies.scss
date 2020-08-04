@@ -1,25 +1,30 @@
+.testimonies-list__title{
+    @include mobile-title;
+    color: $hot-dark-color;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 100px;
+
+}
 .testimonies-list__container{
     margin: 0px;
-    padding: 0px;
-    margin-top: 100px;
+    padding: 35px 25px;
+    padding-top: 0px;
     margin-bottom: 80px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .testimonies-list__title{
-        @include mobile-title;
-        color: $hot-dark-color;
-        margin-bottom: 0px;
-    }
+    
+
     .card-object{
         background-color: $hot-light-color;
         border-radius: 10px;
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
         margin: 20px 0;
         width: 100%;
-        max-width: 300px;
+      
         display: flex;
         flex-direction: column;
         .testimonies-card__header{
@@ -33,6 +38,8 @@
             @include mobile-text;
             padding: 20px;
             white-space: pre-line;
+            line-height: 1.5;
+            font-weight: 100;
         }
         .testimonies-card__name{
             padding: 20px;
@@ -53,30 +60,33 @@
 
 
 @media (min-width: 768px) {
+    .testimonies-list__title{
+        @include tablet-title;
+        color: $hot-dark-color;
+        margin-bottom: 0px;
+    }
     .testimonies-list__container{
         margin: 0px;
-        padding: 0px;
-        margin-top: 100px;
-        margin-bottom: 80px;
+        margin-bottom: 120px;
+        padding: 0px 60px;
+        padding-top: 0px;
         width: 100%;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        .testimonies-list__title{
-            @include mobile-title;
-            color: $hot-dark-color;
-            margin-bottom: 0px;
-        }
+
         .card-object{
             background-color: $hot-light-color;
             border-radius: 10px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
             margin: 20px 0;
             width: 100%;
-           
+            min-width: 80vw;
             display: flex;
             flex-direction: column;
+
             .testimonies-card__header{
                 display: none;
                 
@@ -85,14 +95,75 @@
                 
             }
             .testimonies-card__text{
-                @include mobile-text;
-                padding: 20px;
+                @include tablet-text;
+                padding: 30px;
                 white-space: pre-line;
             }
             .testimonies-card__name{
-                padding: 20px;
+                padding: 30px;
                 padding-top: 0px;
-                font-size: 15px;
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-family: "Lato", sans-serif;
+                text-align: end;
+                text-transform: uppercase;
+            }
+            .testimonies-card__footer{
+                display: none;
+                span{
+                    display: none;}
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .testimonies-list__title{
+        @include pc-title;
+        color: $hot-dark-color;
+        margin-bottom: 0px;
+        margin-top: 80px;
+        padding-bottom: 60px;
+    }
+    .testimonies-list__container{
+        margin: 0px;
+        margin-bottom: 80px;
+        padding: 0px 120px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .card-object{
+            background-color: $hot-light-color;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+            margin: 30px 0;
+            min-width: 50vw;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+
+            .testimonies-card__header{
+                display: none;
+                
+                span{
+                    display: none;}
+                
+            }
+            .testimonies-card__text{
+                @include tablet-text;
+                padding: 30px;
+                white-space: pre-line;
+            }
+            .testimonies-card__name{
+                padding: 30px;
+                padding-top: 0px;
+                font-size: 18px;
                 letter-spacing: 1px;
                 font-family: "Lato", sans-serif;
                 text-align: end;

@@ -47,11 +47,13 @@
             margin-top: 2px;
         }
         p{
-            @include pc-text; 
+            @include tablet-text; 
+            padding-right: 200px;
         }
     
         .button{
             @include pc-button;
+            margin-bottom: 70px;
         }
     }
 }

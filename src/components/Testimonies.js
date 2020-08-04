@@ -8,9 +8,9 @@ const Testimonies = () => {
 
     return (
         <>
-
-        <ul className="testimonies-list__container container">
         <h2 className="testimonies-list__title container" id="cardList"><span className="bold-title">Testimonios:</span></h2>
+        <ul className="testimonies-list__container container">
+
         {
             testimonies.map((cardObject) =>
             <li className="card-object"
