@@ -11,21 +11,23 @@ import Aboutme from './Aboutme';
 import Contact from './Contact';
 import Testimonies from './Testimonies';
 import Linktocontact from './Linktocontact';
+import ScrollToTop from './ScrollToTop';
 
 import { Route, Switch } from 'react-router-dom';
 
+ 
 
-  const App = () => {
+  const App = (props) => {
 
 
     return ( 
             <div className = "App" >
-
+                    <ScrollToTop/>
                     <Switch>
                         <Route exact path="/">
-                            <Header/>
+                            <Header />
 
-                            <Hero/>
+                            <Hero />
 
                             <Main/>
                             <div className="card-list__pc-background-container">  
@@ -38,25 +40,25 @@ import { Route, Switch } from 'react-router-dom';
                         </Route>
 
                         <Route exact path="/sobre-mi">
-                                    <Header/>
+                                    <Header />
                                     <Aboutme/>
                                     <Footer/>
                         </Route>    
 
                         <Route exact path="/contacto">
-                                    <Header/>
+                                    <Header />
                                     <Contact/>
                                     <Footer/>
                         </Route> 
 
                         <Route exact path="/testimonios">
-                                    <Header/>
+                                    <Header />
                                     <Testimonies/>
                                     <Footer/>
                         </Route> 
 
                         <Route exact path="/consultas">
-                                    <Header/>
+                                    <Header />
                                     <div className="card-list__pc-background-container__another-page">
                                         <Cardlist/>
                                         <Linktocontact/>
@@ -65,7 +67,7 @@ import { Route, Switch } from 'react-router-dom';
                         </Route> 
 
                     </Switch>
-  
+                    
             </div>
     )};
   

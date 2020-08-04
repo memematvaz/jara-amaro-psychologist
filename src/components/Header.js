@@ -3,7 +3,8 @@ import logo from '../images/logo192.png'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+
+const Header = (props) => {
 
     
     const [isMenuOpen, setIsMenuOpen] = useState("header__hamburger-close");
@@ -21,6 +22,7 @@ const Header = () => {
         <header className="header">
              <Link className="link" to="/">
                 <div className="header__logo-container" id="returnHome">
+                    
                     <div className="header__logo-image-container">
                         <img src={ logo } alt="logo Jara Amaro psicóloga"></img>
                     </div>
