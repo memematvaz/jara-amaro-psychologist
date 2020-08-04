@@ -13,7 +13,11 @@ class Contact extends React.Component {
     render() {
     const { status } = this.state;
     return (
-     
+     <div className="contact__container container">
+    <h3>Si tienes cualquier duda o si quieres pedir cita<br/><span className="bold-title">¡No dudes en contactar conmigo!</span></h3>
+
+<div className="contact__form-shape-container">
+
     <form className="contact__form"
           onSubmit={this.submitForm}
           action="https://formspree.io/mnqgwooo" 
@@ -36,15 +40,19 @@ class Contact extends React.Component {
 
         <label htmlFor="message">Mensaje*</label>
           
-          <input type="text" id="message"  name="message" placeholder="Escribe tu mensaje" required></input>
+          <textarea className="contact__message" type="text" id="message"  name="message" placeholder="Escribe tu mensaje" required></textarea>
         
-        {status === "SUCCESS" ? <p>¡Gracias por escribirme! Te contestaré en el menor tiempo posible</p> : <button>Enviar</button>}
+        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button>Enviar</button>}
         {status === "ERROR" && <p>Por favor rellena todos los campos requeridos.</p>}
 
        
       </form>
+      <div className="contact__shape"></div>
 
-    
+
+
+    </div>
+  </div>
     );
 }
 

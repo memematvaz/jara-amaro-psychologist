@@ -1,15 +1,188 @@
-.contact__form{
-  margin: 120px;
+.contact__container{
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3{ @include mobile-title;
+    padding-top: 0px;
+    color: $hot-dark-color;
+  }
+
+
+  .contact__form-shape-container{
+    width: 100%;
+    max-width: 400px;
+  .contact__shape{
+    display: none;
+  }
+  .contact__form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+    label{
+      @include mobile-text;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      text-align: start;
+      color: grey;
+    }
+
+    textarea, input{
+      @include mobile-text;
+      font-size: 15px;
+      padding: 5px;
+    }
+    .contact__message{
+      height: 150px;
+    }
+    button {
+      @include mobile-button;
+      margin-top: 30px;
+    }
+
+    p{
+      @include mobile-text;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      text-align: start;
+      color:$hot-dark-color;
+      span{
+        color: grey;
+      }
+    }
+  }
+  }
 }
 
 @media (min-width: 768px) {
+  .contact__container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+    h3{ @include tablet-title;
+      padding-top: 0px;
+      color: $hot-dark-color;
+    }
 
+    .contact__form-shape-container{
+      display: flex;
+      flex-direction: row;
+    .contact__shape{
+      display: block;
+      background-image: url("../../images/shape.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .contact__form{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+  
+      label{
+        @include tablet-text;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        text-align: start;
+        color: grey;
+      }
+  
+      textarea, input{
+        @include tablet-text;
+        font-size: 15px;
+        padding: 5px;
+      }
+      .contact__message{
+        height: 150px;
+      }
+      button {
+        @include tablet-button;
+        margin-top: 30px;
+      }
+  
+      p{
+        @include tablet-text;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        text-align: start;
+        color:$hot-dark-color;
+        span{
+          color: grey;
+        }
+      }
+  
+    }
+  }
+  }
 }
 
 @media (min-width: 1200px) {
-
+  .contact__container{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+    h3{ @include tablet-title;
+      padding-top: 0px;
+      padding-bottom: 50px;
+      color: $hot-dark-color;
+    }
+    .contact__form{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+  
+      label{
+        @include tablet-text;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        text-align: start;
+        color: grey;
+      }
+  
+      textarea, input{
+        @include tablet-text;
+        font-size: 15px;
+        padding: 5px;
+      }
+      .contact__message{
+        height: 150px;
+      }
+      button {
+        @include tablet-button;
+        margin-top: 30px;
+      }
+  
+      p{
+        @include tablet-text;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        text-align: start;
+        color:$hot-dark-color;
+        span{
+          color: grey;
+        }
+      }
+  
+    }
+  }
 }
 
 
