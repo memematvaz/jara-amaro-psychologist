@@ -38,6 +38,17 @@
       font-size: 15px;
       padding: 5px;
     }
+
+    .contact__input-good {
+      border-color: $cold-dark-color;
+      border-style: solid;
+    } 
+    .contact__input-bad{
+      border-color: $hot-dark-color;
+      border-style: solid;
+ 
+    }
+
     .contact__message{
       height: 150px;
     }

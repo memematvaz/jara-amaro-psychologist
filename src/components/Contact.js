@@ -7,9 +7,20 @@ class Contact extends React.Component {
       this.submitForm = this.submitForm.bind(this);
       this.state = {
         status: "",
+        userName: "",
+        userEmail: "",
+        userMessage: "",
 
       };
     }
+
+    updateUserName = (userName) => {
+      this.setState({userName}, this.validateUserName)
+      console.log(userName)
+    }
+
+
+
 
     render() {
     const { status } = this.state;
@@ -25,13 +36,13 @@ class Contact extends React.Component {
           method="POST">
 
         <label htmlFor="name">Nombre y apellidos*</label>
-          
-          <input type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"   required></input>
+
+          <input className={`${this.state.userName.length < 3 ? 'contact__input-bad' : 'contact__input-good'}`} type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"  value={ this.state.userName } onChange={(e) => this.updateUserName(e.target.value)} required></input>
         
 
         <label htmlFor="phone">Teléfono</label>
           
-          <input type="text" id="phone" name="phone" placeholder="Ej. 612345678"></input>
+          <input type="number" id="phone" name="phone" placeholder="Ej. 612345678"></input>
         
 
         <label htmlFor="email">Email*</label>
