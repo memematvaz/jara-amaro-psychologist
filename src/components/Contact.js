@@ -74,7 +74,7 @@ class Contact extends React.Component {
 
         <label htmlFor="name">Nombre y apellidos*</label>
 
-          <input  type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"  value={ this.state.userName } onChange={this.handleChange} required></input>
+          <input className={`${errors.name.length > 0 ? 'contact__input-bad' : ''}`} type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"  value={ this.state.userName } onChange={this.handleChange} required></input>
           {errors.name.length > 0 && 
                 <span className='error'>{errors.name}</span>}
 
