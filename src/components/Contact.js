@@ -6,7 +6,8 @@ class Contact extends React.Component {
       super(props);
       this.submitForm = this.submitForm.bind(this);
       this.state = {
-        status: ""
+        status: "",
+
       };
     }
 
@@ -25,10 +26,10 @@ class Contact extends React.Component {
 
         <label htmlFor="name">Nombre y apellidos*</label>
           
-          <input type="text" name="name" id="name" placeholder="Ej. Rosario Espadas" required></input>
+          <input type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"   required></input>
         
 
-        <label htmlFor="phone">Teléfono*</label>
+        <label htmlFor="phone">Teléfono</label>
           
           <input type="text" id="phone" name="phone" placeholder="Ej. 612345678"></input>
         
@@ -42,6 +43,8 @@ class Contact extends React.Component {
           
           <textarea className="contact__message" type="text" id="message"  name="message" placeholder="Escribe tu mensaje" required></textarea>
         
+        <label className="contact__data-message"><input className="contact__checkbox" type="checkbox" value="other" required></input>Acepto los términos de <a href="../documents/data-protection.pdf" target="_blank" rel="noopener noreferrer">protección de datos.</a></label>
+
         {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button>Enviar</button>}
         {status === "ERROR" && <p>Por favor rellena todos los campos requeridos.</p>}
 

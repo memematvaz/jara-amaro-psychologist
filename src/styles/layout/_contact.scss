@@ -14,14 +14,15 @@
 
   .contact__form-shape-container{
     width: 100%;
-    max-width: 400px;
+   
   .contact__shape{
     display: none;
   }
   .contact__form{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    
+    max-width: 400px;
     
 
     label{
@@ -63,6 +64,7 @@
   .contact__container{
     margin-top: 100px;
     margin-bottom: 100px;
+    padding-right: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -76,13 +78,17 @@
     .contact__form-shape-container{
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
     .contact__shape{
       display: block;
-      background-image: url("../../images/shape.svg");
-      background-size: contain;
+      background-image: url("../../images/shape.png");
+      background-size: cover;
       background-repeat: no-repeat;
-      height: 100%;
-      overflow: hidden;
+      height: 500px;
+      width: 400px;
+      margin-left: 100px;
+ 
+    
     }
 
     .contact__form{
@@ -98,7 +104,16 @@
         text-align: start;
         color: grey;
       }
-  
+      .contact__data-message{
+        font-size: 15px;
+        .contact__checkbox{
+        margin-right: 5px;
+        
+        }
+        a{
+          text-decoration: underline;
+        }
+      }
       textarea, input{
         @include tablet-text;
         font-size: 15px;
@@ -138,6 +153,21 @@
     justify-content: flex-start;
     align-items: flex-start;
   
+    .contact__form-shape-container {
+      .contact__shape{
+       display: block;
+       background-image: url("../../images/shape.png");
+       background-size: contain;
+       background-repeat: no-repeat;
+       height: 500px;
+       width: 400px;
+       margin-left: 0px;
+       margin-right: 50px;
+  
+     
+     }
+   }
+
     h3{ @include tablet-title;
       padding-top: 0px;
       padding-bottom: 50px;
@@ -180,7 +210,7 @@
           color: grey;
         }
       }
-  
+
     }
   }
 }
