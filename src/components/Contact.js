@@ -29,7 +29,7 @@ class Contact extends React.Component {
         case 'name': 
           errors.name = 
             value.length < 5
-              ? 'El nombre debe contener al menos 5 caracteres'
+              ? 'Debe contener al menos 5 caracteres'
               : '';
           break;
         case 'email': 
@@ -54,13 +54,13 @@ class Contact extends React.Component {
           break;
       }
     
-      this.setState({errors, [name]: value}, ()=> {
-          console.log(errors)
-      })
+      this.setState({errors, [name]: value});
     }
 
+
+
     render() {
-    const { status } = this.state;
+    const { status, errors } = this.state;
     return (
      <div className="contact__container container">
     <h3>Si tienes cualquier duda o si quieres pedir cita<br/><span className="bold-title">¡No dudes en contactar conmigo!</span></h3>
@@ -75,7 +75,8 @@ class Contact extends React.Component {
         <label htmlFor="name">Nombre y apellidos*</label>
 
           <input  type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"  value={ this.state.userName } onChange={this.handleChange} required></input>
-        
+          {errors.name.length > 0 && 
+                <span className='error'>{errors.name}</span>}
 
         <label htmlFor="phone">Teléfono</label>
           
@@ -85,13 +86,18 @@ class Contact extends React.Component {
         <label htmlFor="email">Email*</label>
           
           <input type="text" id="email" name="email" placeholder="Ej. rosario@gmail.com"  onChange={this.handleChange} required></input>
-        
+          {errors.email.length > 0 && 
+                <span className='error'>{errors.email}</span>}
 
         <label htmlFor="message">Mensaje*</label>
           
           <textarea className="contact__message" type="text" id="message"  name="message" placeholder="Escribe tu mensaje"  onChange={this.handleChange} required></textarea>
-        
-        <label className="contact__data-message"><input className="contact__checkbox" name="protection" type="checkbox" onChange={this.handleChange} defaultChecked={this.state.isChecked} required></input>Acepto los términos de <a href="../documents/data-protection.pdf" target="_blank" rel="noopener noreferrer">protección de datos.</a></label>
+          {errors.message.length > 0 && 
+                <span className='error'>{errors.message}</span>}
+
+        <label className="contact__data-message"><input className="contact__checkbox" name="protection" type="checkbox" onChange={this.handleChange} defaultChecked={this.state.isChecked} required></input>Acepto los términos de <a href="./data-protection.pdf" target="_blank" rel="noopener noreferrer">protección de datos.</a></label>
+        {errors.protection.length > 0 && 
+                <span className='error'>{errors.protection}</span>}
 
         {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button>Enviar</button>}
         {status === "ERROR" && <p>Por favor rellena todos los campos requeridos.</p>}
@@ -115,7 +121,7 @@ submitForm(ev) {
         xhr.open(form.method, form.action);
         xhr.setRequestHeader("Accept", "application/json");
         xhr.onreadystatechange = () => {
-          if (xhr.readyState !== XMLHttpRequest.DONE) return;
+          if (xhr.readyState !== XMLHttpRequest.DONE ) return;
           if (xhr.status === 200) {
             form.reset();
             this.setState({ status: "SUCCESS" });
