@@ -7,20 +7,57 @@ class Contact extends React.Component {
       this.submitForm = this.submitForm.bind(this);
       this.state = {
         status: "",
-        userName: "",
-        userEmail: "",
-        userMessage: "",
-
+        userName: null,
+        userEmail: null,
+        userMessage: null,
+        isChecked: false,
+        errors: {
+          name: '',
+          email: '',
+          message: '',
+          protection: '',
+        }
       };
     }
 
-    updateUserName = (userName) => {
-      this.setState({userName}, this.validateUserName)
-      console.log(userName)
+    handleChange = (event) => {
+      event.preventDefault();
+      const { name, value } = event.target;
+      let errors = this.state.errors;
+    
+      switch (name) {
+        case 'name': 
+          errors.name = 
+            value.length < 5
+              ? 'El nombre debe contener al menos 5 caracteres'
+              : '';
+          break;
+        case 'email': 
+          errors.email = 
+            value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) 
+              ? ''
+              : 'El email no es válido';
+          break;
+        case 'message': 
+          errors.password = 
+            value.length < 8
+              ? '¡Cuéntame algo más!'
+              : '';
+          break;
+          case 'protection': 
+          errors.protection = 
+            this.isChecked = true
+              ? 'Por favor acepta los términos'
+              : '';
+          break;
+        default:
+          break;
+      }
+    
+      this.setState({errors, [name]: value}, ()=> {
+          console.log(errors)
+      })
     }
-
-
-
 
     render() {
     const { status } = this.state;
@@ -37,7 +74,7 @@ class Contact extends React.Component {
 
         <label htmlFor="name">Nombre y apellidos*</label>
 
-          <input className={`${this.state.userName.length < 3 ? 'contact__input-bad' : 'contact__input-good'}`} type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"  value={ this.state.userName } onChange={(e) => this.updateUserName(e.target.value)} required></input>
+          <input  type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"  value={ this.state.userName } onChange={this.handleChange} required></input>
         
 
         <label htmlFor="phone">Teléfono</label>
@@ -47,14 +84,14 @@ class Contact extends React.Component {
 
         <label htmlFor="email">Email*</label>
           
-          <input type="text" id="email" name="email" placeholder="Ej. rosario@gmail.com" required></input>
+          <input type="text" id="email" name="email" placeholder="Ej. rosario@gmail.com"  onChange={this.handleChange} required></input>
         
 
         <label htmlFor="message">Mensaje*</label>
           
-          <textarea className="contact__message" type="text" id="message"  name="message" placeholder="Escribe tu mensaje" required></textarea>
+          <textarea className="contact__message" type="text" id="message"  name="message" placeholder="Escribe tu mensaje"  onChange={this.handleChange} required></textarea>
         
-        <label className="contact__data-message"><input className="contact__checkbox" type="checkbox" value="other" required></input>Acepto los términos de <a href="../documents/data-protection.pdf" target="_blank" rel="noopener noreferrer">protección de datos.</a></label>
+        <label className="contact__data-message"><input className="contact__checkbox" name="protection" type="checkbox" onChange={this.handleChange} defaultChecked={this.state.isChecked} required></input>Acepto los términos de <a href="../documents/data-protection.pdf" target="_blank" rel="noopener noreferrer">protección de datos.</a></label>
 
         {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button>Enviar</button>}
         {status === "ERROR" && <p>Por favor rellena todos los campos requeridos.</p>}
