@@ -10,6 +10,7 @@ class Contact extends React.Component {
         name: null,
         email: null,
         message: null,
+        isChecked: false,
         errors: {
           name: '',
           email: '',
@@ -19,7 +20,17 @@ class Contact extends React.Component {
       };
     }
 
-
+    toggleChecked = (event) => {
+      event.preventDefault();
+    if(this.state.isChecked === false){
+      console.log(this.state.isChecked)
+      return (this.setState.isChecked === true);
+    } 
+    else {
+      console.log(this.state.isChecked)
+      return (this.setState.isChecked === false);
+    } 
+    }
 
     handleChange = (event) => {
       event.preventDefault();
@@ -68,7 +79,7 @@ class Contact extends React.Component {
           action="https://formspree.io/mnqgwooo" 
           method="POST">
 
-        <label htmlFor="name">Nombre y apellidos*</label>
+        <label htmlFor="name">Nombre y apellidos<span>*</span></label>
 
           <input className={`${errors.name.length > 0 ? 'contact__input-bad' : ''}`} type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"  value={ this.state.name } onChange={this.handleChange} required></input>
           {errors.name.length > 0 && 
@@ -79,25 +90,25 @@ class Contact extends React.Component {
           <input type="number" id="phone" name="phone" placeholder="Ej. 612345678"></input>
         
 
-        <label htmlFor="email">Email*</label>
+        <label htmlFor="email">Email<span>*</span></label>
           
           <input className={`${errors.email.length > 0 ? 'contact__input-bad' : ''}`} type="text" id="email" name="email" placeholder="Ej. rosario@gmail.com"  onChange={this.handleChange} value={ this.state.email } required></input>
           {errors.email.length > 0 && 
                 <span className='error'>{errors.email}</span>}
 
-        <label htmlFor="message">Mensaje*</label>
+        <label htmlFor="message">Mensaje<span>*</span></label>
           
           <textarea className={`contact__message ${errors.message.length > 0 ? 'contact__input-bad' : ''}`} type="text" id="message"  name="message" placeholder="Escribe tu mensaje" value={ this.state.message } onChange={this.handleChange} required></textarea>
           {errors.message.length > 0 && 
                 <span className='error'>{errors.message}</span>}
 
         <label className="contact__data-message">
-          <input  className="contact__checkbox" name="protection" type="checkbox" required></input>
-          Acepto los términos de <a href="./data-protection.pdf" target="_blank" rel="noopener noreferrer">protección de datos.</a>
+          <input  className="contact__checkbox" name="protection" type="checkbox" defaultChecked={this.state.isChecked} onClick={ () => { this.setState({ isChecked: !this.state.isChecked }); console.log(this.state.isChecked) }} required></input>
+          Acepto los términos de <a href="./data-protection.pdf" target="_blank" rel="noopener noreferrer">protección de datos.</a><span>*</span>
         </label>
         
 
-        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button disabled={errors.name.length > 0 || errors.email.length > 0|| errors.message.length > 0 || this.state.name === null || this.state.email === null  || this.state.message === null}>Enviar</button>}
+        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button disabled={errors.name.length > 0 || errors.email.length > 0|| errors.message.length > 0 || this.state.name === null || this.state.email === null  || this.state.message === null || this.state.isChecked === false}>Enviar</button>}
         {status === "ERROR" && <p>Por favor rellena todos los campos requeridos.</p>}
 
        
