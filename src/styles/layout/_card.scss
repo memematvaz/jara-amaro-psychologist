@@ -19,6 +19,7 @@
 
         .card-details__close-icon{
             display: none;
+            cursor: pointer;
         }
 
         .card__circle{
@@ -74,10 +75,12 @@
             font-weight: 900;
             color: $hot-dark-color;
             text-align: end;
+            cursor: pointer;
        }
 
        .read-less{
            display: none;
+           cursor: pointer;
        }
     }
     .card-details__text-container{

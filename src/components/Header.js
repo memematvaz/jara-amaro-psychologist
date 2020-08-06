@@ -53,7 +53,7 @@ const Header = (props) => {
                             <Link className="link" to="/sobre-mi">
                                 <li>Sobre mí</li>
                             </Link>
-                            <li>Blog</li>
+                            
                         </ul>                    
                 </div>
             </nav>
