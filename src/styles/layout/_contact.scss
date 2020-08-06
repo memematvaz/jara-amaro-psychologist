@@ -32,6 +32,18 @@
       text-align: start;
       color: grey;
     }
+    .contact__data-message{
+      font-size: 15px;
+      .contact__checkbox{
+      margin-right: 5px;
+      
+      }
+      a{
+        text-decoration: underline;
+      }
+    }
+
+
     .error{
       @include mobile-text;
       font-size: 15px;

@@ -7,18 +7,19 @@ class Contact extends React.Component {
       this.submitForm = this.submitForm.bind(this);
       this.state = {
         status: '',
-        userName: null,
-        userEmail: null,
-        userMessage: null,
-        isChecked: false,
+        name: null,
+        email: null,
+        message: null,
         errors: {
           name: '',
           email: '',
           message: '',
-          protection: '',
+        
         }
       };
     }
+
+
 
     handleChange = (event) => {
       event.preventDefault();
@@ -44,12 +45,7 @@ class Contact extends React.Component {
               ? '¡Cuéntame algo más!'
               : '';
           break;
-          case 'protection': 
-          errors.protection = 
-            this.isChecked = true
-              ? 'Por favor acepta los términos'
-              : '';
-          break;
+
         default:
           break;
       }
@@ -74,7 +70,7 @@ class Contact extends React.Component {
 
         <label htmlFor="name">Nombre y apellidos*</label>
 
-          <input className={`${errors.name.length > 0 ? 'contact__input-bad' : ''}`} type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"  value={ this.state.userName } onChange={this.handleChange} required></input>
+          <input className={`${errors.name.length > 0 ? 'contact__input-bad' : ''}`} type="text" name="name" id="name" placeholder="Ej. Rosario Espadas"  value={ this.state.name } onChange={this.handleChange} required></input>
           {errors.name.length > 0 && 
                 <span className='error'>{errors.name}</span>}
 
@@ -85,21 +81,23 @@ class Contact extends React.Component {
 
         <label htmlFor="email">Email*</label>
           
-          <input className={`${errors.email.length > 0 ? 'contact__input-bad' : ''}`} type="text" id="email" name="email" placeholder="Ej. rosario@gmail.com"  onChange={this.handleChange} required></input>
+          <input className={`${errors.email.length > 0 ? 'contact__input-bad' : ''}`} type="text" id="email" name="email" placeholder="Ej. rosario@gmail.com"  onChange={this.handleChange} value={ this.state.email } required></input>
           {errors.email.length > 0 && 
                 <span className='error'>{errors.email}</span>}
 
         <label htmlFor="message">Mensaje*</label>
           
-          <textarea className={`contact__message ${errors.message.length > 0 ? 'contact__input-bad' : ''}`} type="text" id="message"  name="message" placeholder="Escribe tu mensaje"  onChange={this.handleChange} required></textarea>
+          <textarea className={`contact__message ${errors.message.length > 0 ? 'contact__input-bad' : ''}`} type="text" id="message"  name="message" placeholder="Escribe tu mensaje" value={ this.state.message } onChange={this.handleChange} required></textarea>
           {errors.message.length > 0 && 
                 <span className='error'>{errors.message}</span>}
 
-        <label className="contact__data-message"><input className="contact__checkbox" name="protection" type="checkbox" onChange={this.handleChange} defaultChecked={this.state.isChecked} required></input>Acepto los términos de <a href="./data-protection.pdf" target="_blank" rel="noopener noreferrer">protección de datos.</a></label>
-        {errors.protection.length > 0 && 
-                <span className='error'>{errors.protection}</span>}
+        <label className="contact__data-message">
+          <input  className="contact__checkbox" name="protection" type="checkbox" required></input>
+          Acepto los términos de <a href="./data-protection.pdf" target="_blank" rel="noopener noreferrer">protección de datos.</a>
+        </label>
+        
 
-        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button disabled={errors.name.length === 0 || errors.email.length === 0|| errors.message.length === 0 || errors.protection.length === 0}>Enviar</button>}
+        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button disabled={errors.name.length > 0 || errors.email.length > 0|| errors.message.length > 0 || this.state.name === null || this.state.email === null  || this.state.message === null}>Enviar</button>}
         {status === "ERROR" && <p>Por favor rellena todos los campos requeridos.</p>}
 
        
