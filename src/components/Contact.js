@@ -8,6 +8,7 @@ class Contact extends React.Component {
       this.state = {
         status: '',
         name: null,
+        phone:null,
         email: null,
         message: null,
         isChecked: false,
@@ -21,17 +22,7 @@ class Contact extends React.Component {
       };
     }
 
-    toggleChecked = (event) => {
-      event.preventDefault();
-    if(this.state.isChecked === false){
-      console.log(this.state.isChecked)
-      return (this.setState.isChecked === true);
-    } 
-    else {
-      console.log(this.state.isChecked)
-      return (this.setState.isChecked === false);
-    } 
-    }
+
 
     handleChange = (event) => {
       event.preventDefault();
@@ -117,7 +108,7 @@ class Contact extends React.Component {
         </label>
         
 
-        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button disabled={errors.name.length > 0 || errors.email.length > 0|| errors.message.length > 0 || errors.phone.length > 0 ||  this.state.name === null || this.state.email === null  || this.state.message === null || this.state.isChecked === false}>Enviar</button>}
+        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button disabled={errors.name.length > 0 || errors.email.length > 0|| errors.message.length > 0 || errors.phone.length > 0 ||  this.state.name === null || this.state.email === null  || this.state.message === null ||this.state.phone === null || this.state.isChecked === false} >Enviar</button>}
         {status === "ERROR" && <p>Por favor rellena todos los campos requeridos.</p>}
 
        
@@ -131,6 +122,9 @@ class Contact extends React.Component {
     );
 }
 
+
+
+
 submitForm(ev) {
         ev.preventDefault();
         const form = ev.target;
@@ -142,7 +136,7 @@ submitForm(ev) {
           if (xhr.readyState !== XMLHttpRequest.DONE ) return;
           if (xhr.status === 200) {
             form.reset();
-            this.setState({ status: "SUCCESS" });
+            this.setState({ status: "SUCCESS", name:null, phone:null, email:null, message: '', });
           } else {
             this.setState({ status: "ERROR" });
           }
