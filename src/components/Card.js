@@ -47,7 +47,7 @@ const Card = (props) => {
                         <div >
                         <p className="card-details__mobile-no">Solicita tu cita primera cita llamando al teléfono<span className="telephone"> 680 36 26 44</span> o escríbeme rellenando el siguiente formulario:
                     </p>
-                    <Link className="link" to="/contact">
+                    <Link className="link" to="/contacto">
                         <button className="card-details__mobile-no button">¡Escríbeme!</button>
                     </Link>
                     </div>
