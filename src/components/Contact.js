@@ -6,7 +6,7 @@ class Contact extends React.Component {
       super(props);
       this.submitForm = this.submitForm.bind(this);
       this.state = {
-        status: "",
+        status: '',
         userName: null,
         userEmail: null,
         userMessage: null,
@@ -39,7 +39,7 @@ class Contact extends React.Component {
               : 'El email no es válido';
           break;
         case 'message': 
-          errors.password = 
+          errors.message = 
             value.length < 8
               ? '¡Cuéntame algo más!'
               : '';
@@ -85,13 +85,13 @@ class Contact extends React.Component {
 
         <label htmlFor="email">Email*</label>
           
-          <input type="text" id="email" name="email" placeholder="Ej. rosario@gmail.com"  onChange={this.handleChange} required></input>
+          <input className={`${errors.email.length > 0 ? 'contact__input-bad' : ''}`} type="text" id="email" name="email" placeholder="Ej. rosario@gmail.com"  onChange={this.handleChange} required></input>
           {errors.email.length > 0 && 
                 <span className='error'>{errors.email}</span>}
 
         <label htmlFor="message">Mensaje*</label>
           
-          <textarea className="contact__message" type="text" id="message"  name="message" placeholder="Escribe tu mensaje"  onChange={this.handleChange} required></textarea>
+          <textarea className={`contact__message ${errors.message.length > 0 ? 'contact__input-bad' : ''}`} type="text" id="message"  name="message" placeholder="Escribe tu mensaje"  onChange={this.handleChange} required></textarea>
           {errors.message.length > 0 && 
                 <span className='error'>{errors.message}</span>}
 

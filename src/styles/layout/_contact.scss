@@ -32,22 +32,30 @@
       text-align: start;
       color: grey;
     }
+    .error{
+      @include mobile-text;
+      font-size: 15px;
+      padding-top: 5px;
+      color: $hot-dark-color;
+    }
 
     textarea, input{
       @include mobile-text;
       font-size: 15px;
       padding: 5px;
     }
-
-    .contact__input-good {
-      border-color: $cold-dark-color;
-      border-style: solid;
-    } 
     .contact__input-bad{
       border-color: $hot-dark-color;
       border-style: solid;
+      border-width: unset;
  
     }
+    .contact__input-good {
+      border-color: $cold-dark-color;
+      border-style: solid;
+      border-width: unset;
+    } 
+
 
     .contact__message{
       height: 150px;
@@ -130,6 +138,7 @@
         font-size: 15px;
         padding: 5px;
       }
+      
       .contact__message{
         height: 150px;
       }
