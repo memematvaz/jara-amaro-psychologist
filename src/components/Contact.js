@@ -76,7 +76,7 @@ class Contact extends React.Component {
 
     <form className="contact__form"
           onSubmit={this.submitForm}
-          action="https://formspree.io/mnqgwooo" 
+          action="https://formspree.io/meqrnpnq" 
           method="POST">
 
         <label htmlFor="name">Nombre y apellidos<span>*</span></label>
