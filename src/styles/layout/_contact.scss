@@ -64,6 +64,10 @@
       @include mobile-button;
       margin-top: 30px;
     }
+    button:disabled{
+      background: grey !important;
+      pointer-events: none;
+    }
 
     p{
       @include mobile-text;

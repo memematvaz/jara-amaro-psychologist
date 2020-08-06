@@ -99,7 +99,7 @@ class Contact extends React.Component {
         {errors.protection.length > 0 && 
                 <span className='error'>{errors.protection}</span>}
 
-        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button>Enviar</button>}
+        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button disabled={errors.name.length === 0 || errors.email.length === 0|| errors.message.length === 0 || errors.protection.length === 0}>Enviar</button>}
         {status === "ERROR" && <p>Por favor rellena todos los campos requeridos.</p>}
 
        
