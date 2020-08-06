@@ -31,6 +31,30 @@
       padding-bottom: 5px;
       text-align: start;
       color: grey;
+      span {
+        color: $hot-dark-color;
+        font-size: 20px;
+      
+        
+      }
+    }
+    .contact__data-message{
+      font-size: 15px;
+      .contact__checkbox{
+      margin-right: 5px;
+      
+      }
+      a{
+        text-decoration: underline;
+      }
+    }
+
+
+    .error{
+      @include mobile-text;
+      font-size: 15px;
+      padding-top: 5px;
+      color: $hot-dark-color;
     }
 
     textarea, input{
@@ -38,12 +62,29 @@
       font-size: 15px;
       padding: 5px;
     }
+    .contact__input-bad{
+      border-color: $hot-dark-color;
+      border-style: solid;
+      border-width: unset;
+ 
+    }
+    .contact__input-good {
+      border-color: $cold-dark-color;
+      border-style: solid;
+      border-width: unset;
+    } 
+
+
     .contact__message{
       height: 150px;
     }
     button {
       @include mobile-button;
       margin-top: 30px;
+    }
+    button:disabled{
+      background: grey !important;
+      pointer-events: none;
     }
 
     p{
@@ -119,6 +160,7 @@
         font-size: 15px;
         padding: 5px;
       }
+      
       .contact__message{
         height: 150px;
       }
