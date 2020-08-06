@@ -13,6 +13,7 @@ class Contact extends React.Component {
         isChecked: false,
         errors: {
           name: '',
+          phone:'',
           email: '',
           message: '',
         
@@ -44,9 +45,16 @@ class Contact extends React.Component {
               ? 'Debe contener al menos 5 caracteres'
               : '';
           break;
+          case 'phone': 
+          errors.phone = 
+          value.length >= 9
+              ? ''
+              : 'El teléfono no es válido';
+          break;
         case 'email': 
           errors.email = 
-            value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) 
+          value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) 
+             
               ? ''
               : 'El email no es válido';
           break;
@@ -85,10 +93,11 @@ class Contact extends React.Component {
           {errors.name.length > 0 && 
                 <span className='error'>{errors.name}</span>}
 
-        <label htmlFor="phone">Teléfono</label>
+        <label htmlFor="phone">Teléfono<span>*</span></label>
           
-          <input type="number" id="phone" name="phone" placeholder="Ej. 612345678"></input>
-        
+          <input className={`${errors.phone.length > 0 ? 'contact__input-bad' : ''}`} type="number" id="phone" name="phone" placeholder="Ej. 612345678" onChange={this.handleChange}  required></input>
+          {errors.phone.length > 0 && 
+                <span className='error'>{errors.phone}</span>}
 
         <label htmlFor="email">Email<span>*</span></label>
           
@@ -108,7 +117,7 @@ class Contact extends React.Component {
         </label>
         
 
-        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button disabled={errors.name.length > 0 || errors.email.length > 0|| errors.message.length > 0 || this.state.name === null || this.state.email === null  || this.state.message === null || this.state.isChecked === false}>Enviar</button>}
+        {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button disabled={errors.name.length > 0 || errors.email.length > 0|| errors.message.length > 0 || errors.phone.length > 0 ||  this.state.name === null || this.state.email === null  || this.state.message === null || this.state.isChecked === false}>Enviar</button>}
         {status === "ERROR" && <p>Por favor rellena todos los campos requeridos.</p>}
 
        
