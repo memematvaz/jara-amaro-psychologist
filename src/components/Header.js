@@ -39,6 +39,27 @@ const Header = (props) => {
                     </div>
                         <ul className="header__menu-list">
                             <Link className="link" to="/">
+                                <li onClick={ toggleMenu }>Inicio</li>
+                            </Link>
+                            <Link className="link" to="/consultas">
+                            <li onClick={ toggleMenu }>Consultas</li>
+                            </Link>
+                            <Link className="link" to="/testimonios">
+                                <li onClick={ toggleMenu }>Testimonios</li>
+                            </Link>
+                            <Link className="link" to="/contacto">
+                                <li onClick={ toggleMenu }>Contacto</li>
+                            </Link>
+                            <Link className="link" to="/sobre-mi">
+                                <li onClick={ toggleMenu }>Sobre mí</li>
+                            </Link>
+                            
+                        </ul>                    
+                </div>
+            </nav>
+            <nav className="header__nav-tablet">
+                        <ul className="header__menu-list">
+                            <Link className="link" to="/">
                                 <li>Inicio</li>
                             </Link>
                             <Link className="link" to="/consultas">
@@ -55,9 +76,7 @@ const Header = (props) => {
                             </Link>
                             
                         </ul>                    
-                </div>
             </nav>
-
 
 
 

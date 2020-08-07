@@ -10,6 +10,11 @@
     background-color: white;
     margin: 0px;
 
+    .header__nav-tablet{
+      display: none;
+    }
+
+
     .header__logo-container{
       height: 60px;
       @include mobile-logo;
@@ -49,7 +54,7 @@
           display: block;
           width: 33px;
           height: 4px;
-          margin-bottom: 6px;
+          margin-bottom: 7px;
           position: relative;
           
           background: $cold-dark-color;
@@ -132,8 +137,14 @@
         li {
           padding: 10px 0;
           font-size: 22px;
+
         }
       }
+
+
+
+
+
   }
 }
 
@@ -143,44 +154,36 @@
 
     .header {
       height: 100px;
+      .header__nav-tablet{
+        display:block;
 
-      li {
-        @include tablet-text; 
-        font-size: 18px;
-        color: $cold-dark-color;
-        font-weight: 400;
-        padding: 10px;
+          li {
+            @include tablet-text; 
+            font-size: 18px;
+            color: $cold-dark-color;
+            font-weight: 400;
+            padding: 10px;
 
-      }
+          }
 
-      li:hover {
-        color: $hot-dark-color;
-        transition: color 0.3s ease;
-      }
-  
+          li:hover {
+            color: $hot-dark-color;
+            transition: color 0.3s ease;
+          }
+
+          .header__menu-list {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            box-shadow: 0;
+            padding-right: 20px;
+             }
+
+            }
+
     .header__hamburger-container{
        display: none;    
       }
-
-      .header__hamburger-close , .header__hamburger-open {
-
-            .header__menu-list {
-              display: flex;
-              flex-direction: row;
-              margin: 0;
-              box-shadow: 0;
-              padding-right: 20px;
-
-      }
-  
-      
-  
-  
-  
-  
-  
-        
-    }
   }
 
 
