@@ -24,7 +24,7 @@ const Footer = () => {
                 </Link>
                 <nav>
                     <ul className="footer-rrss">
-                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jara-amaro-mazaira-791b17108/"> <img className="footer__logo-linkedin" src={ linkedin } alt="linkedin"></img></a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jara-amaro"> <img className="footer__logo-linkedin" src={ linkedin } alt="linkedin"></img></a></li>
                             
                             <li><a target="_blank" rel="noopener noreferrer" href="https://www.doctoralia.es/jara-amaro-mazaira/psicologo/vigo"><img className="footer__logo-doctoralia" src={ doctoralia } alt="doctoralia"></img></a></li>
                         
