@@ -36,12 +36,16 @@ const Footer = () => {
                 </nav>
             </div>
 
-            <small className="footer__workers-list container">
-               <div>
+            <small className="footer__workers">
+                <div className="footer__data-list">
+                    <p>Nº Colegiado: G-5419</p>
+                    <p>Licenciatura de Psicología y Máster Oficial en Psicología General Sanitaria</p>
+                    <p>Nº Registro sanitario: C-36-002696</p>
+                    <p>DNI: 53309506Z</p>     
+                </div>
+                <div className="footer__workers-list">
                     <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/maria-mateo-vazquez/">Diseño y desarrollo web María Mateo</a></p>
                     <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/anaamarovazquez/">Redes sociales Ana Amaro</a></p>
-                </div>
-                <div>
                     <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sandra-garc%C3%ADa-moreno-45a811176/">Copywriter Sandra García</a></p>
                     <p><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sara_m.lo.photo/">Fotografía Sara M</a></p>
                 </div>
