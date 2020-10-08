@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 class Contact extends React.Component {
@@ -97,26 +98,18 @@ class Contact extends React.Component {
                 <span className='error'>{errors.email}</span>}
 
         <label htmlFor="message">Mensaje<span>*</span></label>
-          
           <textarea className={`contact__message ${errors.message.length > 0 ? 'contact__input-bad' : ''}`} type="text" id="message"  name="message" placeholder="Escribe tu mensaje" value={ this.state.message } onChange={this.handleChange} required></textarea>
           {errors.message.length > 0 && 
                 <span className='error'>{errors.message}</span>}
-
         <label className="contact__data-message">
           <input  className="contact__checkbox" name="protection" type="checkbox" defaultChecked={this.state.isChecked} onClick={ () => { this.setState({ isChecked: !this.state.isChecked }); console.log(this.state.isChecked) }} required></input>
-          Acepto los términos de <a href="./data-protection.pdf" target="_blank" rel="noopener noreferrer">protección de datos.</a><span>*</span>
+          Acepto el tratamiento de mis datos para el envío de comunicaciones de productos o servicios. Más información del tratamiento en  <Link className="link" to="/politica-privacidad">Política de privacidad
+            </Link><span>*</span>
         </label>
-        
-
         {status === "SUCCESS" ? <p>¡Gracias por escribirme!<br/> Te contestaré en el menor tiempo posible.</p> : <button disabled={errors.name.length > 0 || errors.email.length > 0|| errors.message.length > 0 || errors.phone.length > 0 ||  this.state.name === null || this.state.email === null  || this.state.message === null ||this.state.phone === null || this.state.isChecked === false} >Enviar</button>}
         {status === "ERROR" && <p>Por favor rellena todos los campos requeridos.</p>}
-
-       
       </form>
       <div className="contact__shape"></div>
-
-
-
     </div>
   </div>
     );

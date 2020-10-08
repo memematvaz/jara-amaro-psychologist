@@ -2,28 +2,23 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Banner = (props) => {
+const Banner = () => {
 
-    const [isBannerOpen, setIsBannerOpen] = useState("banner__container");
+    const [isBannerOpen, setIsBannerOpen] = useState("banner--open");
     
-    const toggleBanner = () => {
-        if (isBannerOpen === "banner__container"){
-            setIsBannerOpen("banner__container--open")
+    const closeBanner = () => {
+        if (isBannerOpen === "banner--open"){
+            setIsBannerOpen("banner--close")
         } else {
-            setIsBannerOpen("banner__container")
+            setIsBannerOpen("banner--close")
         }
     }
 
 
   return (
     <div className={ isBannerOpen }>
-        <h5>Uso de Cookies</h5>
-        <p>
-            <Link className="link" to="/politica-de-cookies">
-                <span></span>
-            </Link>
-        </p>
-        <button>Aceptar</button>
+        <p>Esta web utiliza cookies técnicas y funcionales. Más información en  <Link className="link" to="/politica-cookies">Política de cookies.</Link></p>
+        <button onClick={ closeBanner }>Aceptar</button>
     
     </div>
 

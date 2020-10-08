@@ -1,0 +1,33 @@
+.banner--close{
+    display: none;
+}
+
+.banner--open{
+   padding: 15px 30px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   @include mobile-text;
+   font-size: 15px;
+   position: fixed;
+   z-index: 1;
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 50px 0px;
+   width: 100%;
+   bottom: 0;
+
+    
+    button{
+        @include mobile-button;
+        padding: 7px;
+        font-size: 13px; 
+        margin: 0px 15px;
+    }
+
+    .link{
+        text-decoration: underline;
+    }
+}
+

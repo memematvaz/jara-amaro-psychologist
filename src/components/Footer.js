@@ -38,10 +38,18 @@ const Footer = () => {
 
             <small className="footer__workers">
                 <div className="footer__data-list">
-                    <p>Nº Colegiado: G-5419</p>
-                    <p>Licenciatura de Psicología y Máster Oficial en Psicología General Sanitaria</p>
-                    <p>Nº Registro sanitario: C-36-002696</p>
-                    <p>DNI: 53309506Z</p>     
+                    <Link className="link" to="/aviso-legal-profesional">
+                        <p>Aviso legal actividad profesional reglada</p>
+                    </Link>
+                    <Link className="link" to="/politica-privacidad">
+                        <p>Política de privacidad</p>
+                    </Link>
+                    <Link className="link" to="/politica-privacidad-redes-sociales">
+                        <p>Política de redes sociales</p>
+                    </Link>
+                    <Link className="link" to="/politica-cookies">
+                        <p>Política de cookies</p>
+                    </Link>   
                 </div>
                 <div className="footer__workers-list">
                     <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/maria-mateo-vazquez/">Diseño y desarrollo web María Mateo</a></p>

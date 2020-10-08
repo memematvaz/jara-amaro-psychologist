@@ -1,0 +1,35 @@
+.legal{
+    margin-top: 100px;
+    
+    &__title{
+        @include mobile-title;
+        color: $cold-dark-color;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    h6, p, ul, li{
+        @include mobile-text; 
+    }
+}
+
+@media (min-width: 768px) {
+    .legal{
+        margin-top: 100px;
+        
+        &__title{
+            @include mobile-title;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        h6, p, ul, li{
+            @include mobile-text; 
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .legal{
+        margin: 100px 100px 0px 100px;
+
+    }
+}
