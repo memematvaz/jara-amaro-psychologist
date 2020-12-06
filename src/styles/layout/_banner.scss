@@ -5,7 +5,7 @@
 .banner--open{
    padding: 15px 30px;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
    flex-wrap: wrap;
@@ -18,6 +18,15 @@
    width: 100%;
    bottom: 0;
 
+   .warnings{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
     
     button{
         @include mobile-button;
