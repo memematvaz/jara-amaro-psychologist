@@ -53,7 +53,7 @@ const Header = (props) => {
                             <Link className="link" to="/sobre-mi">
                                 <li onClick={ toggleMenu }>Sobre mí</li>
                             </Link>
-                            <li><a href="https://jaraamaropsicologa.wordpress.com/blog/">Blog</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://jaraamaropsicologa.wordpress.com/blog/">Blog</a></li>
                         </ul>                    
                 </div>
             </nav>
@@ -74,7 +74,7 @@ const Header = (props) => {
                             <Link className="link" to="/sobre-mi">
                                 <li>Sobre mí</li>
                             </Link>
-                            <li><a href="https://jaraamaropsicologa.wordpress.com/blog/">Blog</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://jaraamaropsicologa.wordpress.com/blog/">Blog</a></li>
                         </ul>                    
             </nav>
 
