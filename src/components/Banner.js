@@ -22,7 +22,7 @@ ordenador de quien accede a la página) para llevar a cabo determinadas funcione
 imprescindibles para el correcto funcionamiento y visualización del sitio. Las cookies utilizadas tienen, en todo
 caso, carácter temporal, con la única finalidad de hacer más eficaz la navegación, y desaparecen al terminar la
 sesión del usuario. En ningún caso, estas cookies proporcionan por sí mismas datos de carácter personal y no se
-utilizarán para la recogida de los mismos. Más información en  <Link className="link" to="/politica-cookies">Política de cookies.</Link></p><button onClick={ closeBanner }>Aceptar Cookies</button>
+utilizarán para la recogida de los mismos. Más información en  <Link className="link" to="/politica-cookies">Política de cookies.</Link></p><button onClick={ closeBanner }>Aceptar</button>
         <div className="warnings">
             <Link className="link" to="/aviso-legal-profesional">
                 <p>Aviso legal actividad profesional reglada.</p>
