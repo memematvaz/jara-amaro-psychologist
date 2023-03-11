@@ -70,7 +70,8 @@ class Contact extends React.Component {
     const { status, errors } = this.state;
     return (
      <div className="contact__container container">
-    <h3>Si tienes cualquier duda o si quieres pedir cita<br/><span className="bold-title">¡No dudes en contactar conmigo!</span></h3>
+    {/* <h3>Si tienes cualquier duda o si quieres pedir cita<br/><span className="bold-title">¡No dudes en contactar conmigo!</span></h3> */}
+    <h3>Si quieres contactar con nuestro centro <br/>para resolver una duda o concertar una cita<br/><span className="bold-title">llama a este contacto 640894329</span></h3>
 
 <div className="contact__form-shape-container">
 

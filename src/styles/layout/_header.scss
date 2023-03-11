@@ -16,16 +16,17 @@
 
 
     .header__logo-container{
-      height: 60px;
+      height: 120px;
       @include mobile-logo;
       padding-left: 20px;
-      padding-top: 5px;
+      // padding-top: 5px;
 
       .header__logo-image-container{
-          padding: 10px;
-          height: 50px;
+          // padding: 10px;
+          // height: 50px;
           img {
-              height: 50px;
+              // height: 50px;
+              height: 100%;
           }
       }
 

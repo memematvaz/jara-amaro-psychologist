@@ -18,7 +18,8 @@ const Testimonies = () => {
 
                     <Testimoniesdetails
                     text={cardObject.text}
-                    name={cardObject.name}/>
+                    name={cardObject.name}
+                    date={cardObject.date}/>
              </li>
             )}
          </ul>

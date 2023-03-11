@@ -3,11 +3,11 @@ const THERAPIES =[
         id:1,
         icon:'far fa-building',
         title: ' presenciales',
-        price:'1 hora 50 €',
+        price:'1 hora 60 €',
         text: 'Es ideal para quienes no tienen privacidad en su casa y buscan un espacio de empatía y escucha.',
         details: {
                 how: 'La sesión se realizaría en mi clínica en el centro de Vigo.',
-                time: 'Su duración sería de 1 hora y su precio 50 €',
+                time: 'Su duración sería de 1 hora y su precio 60 €',
                 include: 'Incluye terapia, recomendaciones de ejercicios prácticos y guías en formato PDF que podrás consultar siempre que quieras.',
                 perfect: 'Es ideal para quienes no tienen privacidad en su casa y buscan un espacio de empatía y escucha.',
                 need: 'Lo único que necesitamos son tus ganas y compromiso para venir a la consulta. Y, si quieres, un cuaderno para anotar lo que vamos trabajando.'
@@ -19,11 +19,11 @@ const THERAPIES =[
         id:2,
         icon:'fas fa-desktop',
         title: ' online',
-        price:'1 hora 45 €',
+        price:'1 hora 60 €',
         text: 'Perfecto para ti si no deseas o te es imposible desplazarte.',
         details: {
             how: 'La sesión se realizaría mediante videoconferencia mediante Skype.',                 
-            time: 'Su duración sería de 1 hora y su precio 40 €',
+            time: 'Su duración sería de 1 hora y su precio 60 €',
             include: 'Incluye terapia, recomendaciones de ejercicios prácticos y guías en formato PDF que podrás consultar siempre que quieras.',
             perfect: 'Es ideal para quienes no desean desplazarse o viven lejos de Vigo.',
             need: 'Necesitas un ordenador, tablet o teléfono con conexión a internet.'
@@ -34,11 +34,11 @@ const THERAPIES =[
         id:3,
         icon:'fas fa-mobile-alt',
         title: ' telefónicas',
-        price:'1 hora 30 €',
+        price:'1 hora 40 €',
         text: 'Ideal si no necesitas una terapia tan profunda o si quieres resolver una duda puntual.',
         details: {
             how: 'La sesión se realizaría mediante llamada telefónica.',                 
-            time: 'Su duración sería de 1 hora y su precio de 30 €. Por 10 € más te atiendo en momentos de crisis, o dudas antes de la próxima cita.',
+            time: 'Su duración sería de 1 hora y su precio de 40 €. Por 10 € más te atiendo en momentos de crisis, o dudas antes de la próxima cita.',
             include: 'Incluye terapia telefónica y recomendaciones de ejercicios prácticos.',
             perfect: 'Es ideal para quienes no quieren o necesitan una terapia tan profunda. Si quieres resolver una duda puntual o estás en un momento de crisis.',
             need: 'Solo necesitas un teléfono.'

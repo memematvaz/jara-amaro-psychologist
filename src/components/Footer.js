@@ -18,8 +18,8 @@ const Footer = () => {
                     <div className="footer__logo-image-container container">
                         <img src={ logoInverted } alt="logo Jara Amaro psicóloga"></img>
                     </div>
-                    <h1 className="footer__logo-title">Jara Amaro<br/>
-                                                        psicóloga</h1>
+                    {/* <h1 className="footer__logo-title">Jara Amaro<br/>
+                                                        psicóloga</h1> */}
                 </div>
                 </Link>
                 <nav>

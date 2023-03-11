@@ -26,8 +26,8 @@ const Header = (props) => {
                     <div className="header__logo-image-container">
                         <img src={ logo } alt="logo Jara Amaro psicóloga"></img>
                     </div>
-                    <h1 className="header__logo-title">Jara Amaro<br/>
-                                                        psicóloga</h1>
+                    {/* <h1 className="header__logo-title">Jara Amaro<br/>
+                                                        psicóloga</h1> */}
                 </div>
             </Link>
             <nav>

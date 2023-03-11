@@ -14,17 +14,20 @@
       padding-bottom: 15px;
 
       .footer__logo-container{
-        height: 40px;
+        height: 100%;
         @include mobile-logo;
         
 
 
       .footer__logo-image-container{
-        padding: 10px;
-        height: 40px;
+        padding: 0px;
+        height: 100%;
+        @media screen and (max-width: 768px){
+          padding-bottom: 15px;
+        }
         cursor: pointer;
           img {
-              height: 45px;
+              height: 100%;
           }
       }
 

@@ -42,13 +42,21 @@
             font-weight: 100;
         }
         .testimonies-card__name{
-            padding: 20px;
-            padding-top: 0px;
+            padding: 0 20px 6px;
             font-size: 15px;
             letter-spacing: 1px;
             font-family: "Lato", sans-serif;
             text-align: end;
             text-transform: uppercase;
+        }
+        .testimonies-card__date{
+            padding: 20px;
+            padding-top: 0px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            font-family: "Lato", sans-serif;
+            text-align: end;
+            // text-transform: uppercase;
         }
         .testimonies-card__footer{
             display: none;
@@ -99,9 +107,11 @@
                 padding: 30px;
                 white-space: pre-line;
             }
+            .testimonies-card__date{
+                padding: 0 30px 30px;
+            }
             .testimonies-card__name{
-                padding: 30px;
-                padding-top: 0px;
+                padding: 0 30px 6px;
                 font-size: 18px;
                 letter-spacing: 1px;
                 font-family: "Lato", sans-serif;
@@ -161,8 +171,7 @@
                 white-space: pre-line;
             }
             .testimonies-card__name{
-                padding: 30px;
-                padding-top: 0px;
+                padding: 0 30px 6px;
                 font-size: 18px;
                 letter-spacing: 1px;
                 font-family: "Lato", sans-serif;

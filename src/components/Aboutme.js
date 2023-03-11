@@ -16,11 +16,8 @@ const Aboutme = () => {
                 <p>¿Vas a terapia y <span className="bold-title">sigues sin encontrar una respuesta</span> después de meses?</p>
             </div>
         
-        <h3 className="about-me__title">Si has contestado que sí a alguna de estas preguntas entonces<span className="bold-title"> estás en el lugar que necesitas.</span></h3>
-        <p><span className="bold-title">Soy Jara Amaro, psicóloga y psicoterapeuta.</span> Podría hablarte de mi currículum, pero si has llegado hasta aquí <span className="bold-title">quiero contarte un poco más de mí para que veas que no somos tan distintas como crees.</span></p>
-        <p>En mi adolescencia <span className="bold-title">sufrí problemas de ansiedad, trastornos alimenticios, ataques de pánico y fobia social.</span> Todavía recuerdo aquella sensación tan angustiante cada vez que experimentaba un ataque de pánico. <span className="bold-title">Debido a la vergüenza</span> que me producía que me vieran así y la incertidumbre de no saber cuándo, ni dónde ocurriría, <span className="bold-title">me encerré en mí misma.</span> Me alejé de las personas que quería y de las actividades que me gustaban, lo que empeoró el problema. Llegué a tal punto que padecí fobia social. <span className="bold-title">Muchas personas te dirán que no tienes ningún motivo para estar así y que se puede salir adelante, pero la realidad es que no es tan fácil sin las herramientas y la compañía necesaria.</span></p>
-        <p><span className="bold-title">Estudiar psicología me ayudó a entender</span> como funciona la mente, y cuando entiendes sus mecanismos empiezas a ganar poder sobre ella. A día de hoy <span className="bold-title">he logrado superar mis trastornos</span> y puedo decir con alegría que tengo la vida que deseaba y lo mejor de todo, la que en su momento creí que no conseguiría.</p>
-        <h3>No es que no puedas conseguirlo<br/>
+        <h3 className="about-me__title">Si has contestado que sí a alguna de estas preguntas entonces<span className="bold-title"> estás en el lugar que necesitas.</span><br/><br/>
+        No es que no puedas conseguirlo<br/>
             <span className="bold-title">Solo necesitas los recursos necesarios.</span>
         </h3>
         <h3 className="about-me__orange-title">¿Quieres encontrar <span className="bold-title">ese motivo <br/>
